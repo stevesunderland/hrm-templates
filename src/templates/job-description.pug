@@ -1,0 +1,24 @@
+extends _base
+
+block vars
+	- pagename = "Job Description"
+
+block content
+	header
+		.row.collapse.align-middle
+			.column
+				h1 Job Description
+				nav(aria-label="You are here:" role="navigation")
+					ul.breadcrumbs
+						li: a(href="#") &nbsp;
+
+			.column.shrink
+				button.button.secondary.clear
+					img(src="./images/icon-form.svg")
+					| Create New ID
+				| |
+				button.button.secondary.clear
+					img(src="./images/icon-back.svg")
+					| Log Off
+
+	section.page-content

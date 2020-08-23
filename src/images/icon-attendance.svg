@@ -1,0 +1,18 @@
+<svg id="cta_settings" data-name="cta/settings" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+  <path id="Stroke_3" data-name="Stroke 3" d="M14.269,25.568H1.85A1.838,1.838,0,0,1,0,23.741V1.826A1.829,1.829,0,0,1,1.387,0H18.972c1.484,0,2.312.818,2.312,1.826v13.72" transform="translate(4.776 4.776)" fill="none" stroke="#9eb3c2" stroke-miterlimit="10" stroke-width="1.5"/>
+  <path id="Stroke_5" data-name="Stroke 5" d="M4.776,9.552A4.776,4.776,0,1,1,9.552,4.776,4.781,4.781,0,0,1,4.776,9.552Z" transform="translate(19.582 21.493)" fill="#fff" stroke="#9eb3c2" stroke-miterlimit="10" stroke-width="1.5"/>
+  <path id="Stroke_3-2" data-name="Stroke 3" d="M0,2.084,1.6,3.821,5.731,0" transform="translate(21.493 24.358)" fill="none" stroke="#9eb3c2" stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.5"/>
+  <path id="Stroke_7" data-name="Stroke 7" d="M11.3,19.729H1.457A1.455,1.455,0,0,1,0,18.277V1.452A1.451,1.451,0,0,1,1.093,0H14.762c1.169,0,1.822.65,1.822,1.452v10.37" transform="translate(7.164 8.119)" fill="none" stroke="#9eb3c2" stroke-miterlimit="10" stroke-width="1.5"/>
+  <path id="Fill_7" data-name="Fill 7" d="M1.589.794A.794.794,0,1,1,.794,0a.795.795,0,0,1,.794.794" transform="translate(9.47 11.357)" fill="#fefefe"/>
+  <path id="Stroke_9" data-name="Stroke 9" d="M1.589.794A.794.794,0,1,1,.794,0,.795.795,0,0,1,1.589.794Z" transform="translate(9.47 11.357)" fill="none" stroke="#9eb3c2" stroke-miterlimit="10" stroke-width="1.5"/>
+  <path id="Path" d="M8.208,2.388h-.7a.694.694,0,0,1-.674-.712V1.652C6.837.74,5.659,0,4.794,0H4.758C3.893,0,2.715.74,2.715,1.652v.024a.694.694,0,0,1-.674.712h-.7A1.383,1.383,0,0,0,0,3.806v.029A1.383,1.383,0,0,0,1.344,5.254H8.208A1.383,1.383,0,0,0,9.552,3.835V3.806A1.383,1.383,0,0,0,8.208,2.388Z" transform="translate(10.507 0.955)" fill="#fff" stroke="#9eb3c2" stroke-miterlimit="10" stroke-width="1.5"/>
+  <path id="Path-2" data-name="Path" d="M.955,1.91A.955.955,0,1,1,1.91.955.955.955,0,0,1,.955,1.91Z" transform="translate(14.328 1.91)" fill="none" stroke="#9eb3c2" stroke-miterlimit="10" stroke-width="1.5"/>
+  <path id="Fill_7-2" data-name="Fill 7" d="M1.589.794A.794.794,0,1,1,.794,0a.795.795,0,0,1,.794.794" transform="translate(9.47 16.133)" fill="#fefefe"/>
+  <path id="Stroke_9-2" data-name="Stroke 9" d="M1.589.794A.794.794,0,1,1,.794,0,.795.795,0,0,1,1.589.794Z" transform="translate(9.47 17.088)" fill="none" stroke="#9eb3c2" stroke-miterlimit="10" stroke-width="1.5"/>
+  <path id="Fill_7-3" data-name="Fill 7" d="M1.589.794A.794.794,0,1,1,.794,0a.795.795,0,0,1,.794.794" transform="translate(9.47 20.909)" fill="#fefefe"/>
+  <path id="Stroke_9-3" data-name="Stroke 9" d="M1.589.794A.794.794,0,1,1,.794,0,.795.795,0,0,1,1.589.794Z" transform="translate(9.47 22.819)" fill="none" stroke="#9eb3c2" stroke-miterlimit="10" stroke-width="1.5"/>
+  <path id="Fill_7-4" data-name="Fill 7" d="M1.589.794A.794.794,0,1,1,.794,0a.795.795,0,0,1,.794.794" transform="translate(8.515 24.252)" fill="#fefefe"/>
+  <path id="Stroke_19" data-name="Stroke 19" d="M0,.5H8.6" transform="translate(12.806 11.651)" fill="none" stroke="#9eb3c2" stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.5"/>
+  <path id="Stroke_19-2" data-name="Stroke 19" d="M0,.5H8.6" transform="translate(12.806 17.382)" fill="none" stroke="#9eb3c2" stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.5"/>
+  <path id="Stroke_19-3" data-name="Stroke 19" d="M0,.5,5.582.528" transform="translate(12.806 23.114)" fill="none" stroke="#9eb3c2" stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.5"/>
+</svg>

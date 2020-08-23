@@ -1,0 +1,46 @@
+h1 {
+	font-weight: 600;
+	color: $black;
+}
+
+
+
+
+hr {
+	&.double {
+		border-top: 2px solid #E9EAED;
+		border-bottom: 2px solid #fff;
+		&:after {
+			content: "";
+			display: block;
+			margin-top: 1px;
+			border-bottom: 2px solid #E9EAED;
+		}
+	}
+
+	&.dotted {
+		border-top: 1px dashed #D3E1E2;
+		border-bottom: 0;
+	}
+}
+
+.text-primary {
+	color: $primary-color;
+}
+
+.text-alert {
+	color: $alert-color;
+}
+
+
+
+
+.accordion-title {
+	font-weight: 500;
+}
+.accordion-title:before {
+	margin-top: -0.7rem;
+}
+.is-active > .accordion-title:before {
+	margin-top: -0.3rem;
+}

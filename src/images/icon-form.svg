@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21">
+  <g id="ico_print" data-name="ico/print" transform="translate(1)">
+    <path id="Stroke_3" data-name="Stroke 3" d="M19,12.75V15H0V0H19V13.125" transform="translate(0 5)" fill="none" stroke="#009DDC" stroke-miterlimit="10" stroke-width="2"/>
+    <path id="Line_5" data-name="Line 5" d="M.75.5H.25" transform="translate(3 8)" fill="none" stroke="#009DDC" stroke-linecap="square" stroke-miterlimit="10" stroke-width="2"/>
+    <path id="Line_5-2" data-name="Line 5" d="M.75.5H.25" transform="translate(3 12)" fill="none" stroke="#009DDC" stroke-linecap="square" stroke-miterlimit="10" stroke-width="2"/>
+    <path id="Line_5-3" data-name="Line 5" d="M.75.5H.25" transform="translate(3 16)" fill="none" stroke="#009DDC" stroke-linecap="square" stroke-miterlimit="10" stroke-width="2"/>
+    <path id="Line_5-4" data-name="Line 5" d="M0,.5H8" transform="translate(7 8)" fill="none" stroke="#009DDC" stroke-linecap="square" stroke-miterlimit="10" stroke-width="2"/>
+    <path id="Line_5-5" data-name="Line 5" d="M0,.5H8" transform="translate(7 12)" fill="none" stroke="#009DDC" stroke-linecap="square" stroke-miterlimit="10" stroke-width="2"/>
+    <path id="Line_5-6" data-name="Line 5" d="M0,.5H8" transform="translate(7 16)" fill="none" stroke="#009DDC" stroke-linecap="square" stroke-miterlimit="10" stroke-width="2"/>
+    <path id="Stroke_3-2" data-name="Stroke 3" d="M19,3.4V4H0V0H19V3.5" transform="translate(0 1)" fill="none" stroke="#009DDC" stroke-miterlimit="10" stroke-width="2"/>
+  </g>
+</svg>

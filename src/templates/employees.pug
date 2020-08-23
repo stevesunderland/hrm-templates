@@ -1,0 +1,50 @@
+extends _base
+
+block vars
+	- pagename = "Employees"
+
+block content
+	include _header-employees
+	section.filters
+		form
+			fieldset.fieldset
+				legend Filters
+				.row.align-middle
+					.column
+						.input-group
+							input.input-group-field(type="text" placeholder="Search Employee by Name, Department, Phone, or E-mail")
+							.input-group-button
+								button.button.hollow.secondary(type="submit")
+									img(src="./images/icon-search.svg", alt="Search")
+					.column.shrink
+						button.button.hollow.secondary.shadow
+							.row.collapse
+								.column.shrink
+									img(src="./images/icon-add-employee.svg")
+								.column.text-left Add New<br>Employee
+
+						button.button.hollow.secondary.shadow
+							.row.collapse
+								.column.shrink
+									img(src="./images/icon-bulk-update.svg")
+								.column.text-left Bulk Manager<br>Update Function
+	section.page-content
+		table.table
+			thead
+				tr
+					th(style="padding: 3px;") Photo
+					th Name
+					th Location
+					th Job Title
+					th Department
+					th.text-right Hire Date
+			tbody
+				- var offices = ['HQ', 'Office', 'Plant']
+				for i in new Array(21)
+					tr
+						td(style="padding: 3px;"): img(src=faker.image.avatar(), width="34")
+						td: a(href="./employee.html")= faker.name.findName()
+						td= faker.address.city() + ' ' + offices[Math.floor(Math.random() * offices.length)]
+						td= faker.name.jobTitle()
+						td= faker.name.jobArea()
+						td.text-right= faker.date.past().toLocaleDateString("en-US")

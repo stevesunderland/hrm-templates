@@ -1,0 +1,23 @@
+extends _base
+
+block vars
+	- pagename = "Employees"
+
+block content
+	include _header-employee
+
+	section.tabs-container
+		ul.tabs#employee-tabs(data-tabs)
+			li.tabs-title.is-active: a(href="#personal-information" aria-selected="true") Personal Information
+			li.tabs-title: a(href="#job-information" aria-selected="true") Job Information
+			li.tabs-title: a(href="#compensation" aria-selected="true") Compensation
+			li.tabs-title: a(href="#certicicates-and-training" aria-selected="true") Certificates and Training
+			li.tabs-title: a(href="#files" aria-selected="true") Files
+
+
+
+	section.page-content.tabs-content(data-tabs-content="employee-tabs")
+		.tabs-panel#personal-information.is-active
+			include _employee-form-personal-info
+		.tabs-panel#files
+			include _employee-form-files

@@ -1,0 +1,128 @@
+form.form-panel
+	.row
+		.column.small-9
+			fieldset
+				Legend Employee Info
+				.row
+					.column.small-8
+						label Employee ID #
+							input(type="text" value="0")
+
+						.row
+							.column
+								label First Name
+									input(type="text" value="Elena")
+							.column
+								label Middle Name
+									input(type="text" value="Mai")
+						.row
+							.column
+								label Birth Date
+									input(type="text" value="04/15/1998")
+							.column
+								label SSN
+									input(type="text" value="555-55-5555")
+						.row
+							.column
+								label Gender
+									select
+										option(selected) Female
+							.column
+								label Marital Status
+									select
+										option(selected) Single
+
+					.column.small-4
+						label Employment Status
+							select
+								option(selected) Active
+
+						label Last Name
+							input(type="text" value="Tagaki")
+		.column.small-3
+			fieldset
+				legend Photo
+				.thumbnail-wrapper
+					img.thumbnail(src="./images/elena.png", alt="Elena Tagaki")
+					button.thumbnail-edit Edit
+
+				label Nickname
+				br
+				a(href="#") rue@computersoudan.com
+	hr
+
+	fieldset
+		legend Contact Info
+		.row
+			.column
+				label Address
+					input(type="text" value="287 Summit Avenue")
+			.column
+				label Address 2
+					input(type="text" value="04/15/1998")
+		.row
+			.column.small-4
+				label City
+					input(type="text" value="287 Summit Avenue")
+			.column.small-2
+				label State
+					select
+						option NY
+			.column.small-4
+				label Zip Code
+					input(type="text" value="54025")
+
+		.row
+			.column
+				label Home (e.g xxx-xxx-xxxx)
+					input(type="tel" value="201-343-5570")
+			.column.small-2
+				label Ext
+					input(type="number" value="101")
+			.column
+				label Home (e.g xxx-xxx-xxxx)
+					input(type="tel" value="201-343-5570")
+			.column
+				label Home (e.g xxx-xxx-xxxx)
+					input(type="tel" value="201-343-5570")
+
+	hr
+
+	fieldset
+		legend Log-in Info
+		.row
+			.column
+				label <span class="required">*</span> Email
+					input(type="email" value="email@domain.com" required)
+			.column
+				fieldset
+					legend &nbsp;
+					input(type="checkbox" id="checkbox1")
+					label(for="checkbox1") Use Email as Log-in ID
+
+					input(type="checkbox" id="checkbox2")
+					label(for="checkbox2") HR Access
+
+		.row
+			.column
+				label <span class="required">*</span> Username
+					input(type="text" value="Elena" required)
+			.column
+				label <span class="required">*</span> Password
+					input(type="password" value="201-343-5570" required aria-describedby="passwordHelpText")
+					button.password-help
+				p.help-text#passwordHelpText Min. 3 character
+
+			.column
+				label <span class="required">*</span> Re-enter Password
+					input(type="password" value="201-343-5570" required aria-describedby="passwordConfirmHelpText")
+					button.password-help
+				p.help-text#passwordHelpText Min. 3 char. Must be different form
+
+	br
+
+	.text-center
+		button.button.large.white.gradient.shadow Cancel
+		button.button.large.primary.gradient.shadow Save
+
+p.text-alert * Required Fields

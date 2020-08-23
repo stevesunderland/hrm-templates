@@ -1,0 +1,73 @@
+extends _base
+
+block vars
+	- pagename = "Settings"
+
+block content
+	include _header-settings
+
+	section.page-content.settings-page
+		.row
+			.column
+				fieldset.fieldset
+					legend
+						img(src="./images/icon-settings.svg")
+						| General Settings
+					ul.menu.vertical
+						li: a(href="#") Company
+						li: a(href="#") Departments
+						li: a(href="#") Assign HR Manager
+
+				fieldset.fieldset
+					legend
+						img(src="./images/icon-settings.svg")
+						| Employee Settings
+					ul.menu.vertical
+						li: a(href="#") Personnel Files
+						li: a(href="#") Training and  Certificates Values
+				fieldset.fieldset
+					legend
+						img(src="./images/icon-settings.svg")
+						| PA &amp; JD Settings
+					ul.menu.vertical
+						li: a(href="#") Review Periods
+						li: a(href="#") Rating Definitions
+						li: a(href="#") PA Templates
+						li: a(href="#") JD Templates
+			.column
+				fieldset.fieldset
+					legend
+						img(src="./images/icon-settings.svg")
+						| Time Off Settings
+					ul.menu.vertical
+						li: a(href="#") Time Off Type
+						li: a(href="#") Time Off Policies
+						li: a(href="#") Accrual Policies
+						li: a(href="#") Batch Assign Policies
+						li: a(href="#") Process Accruals Manually
+						li: a(href="#") Payroll Dates
+			.column
+				fieldset.fieldset
+					legend
+						img(src="./images/icon-settings.svg")
+						| Attendance
+					ul.menu.vertical
+						li: a(href="#") Define Work Week
+						li: a(href="#") Work Hours and Meal Preferences
+						li: a(href="#") Overtime Rules
+						li: a(href="#") Rounding Options
+				fieldset.fieldset
+					legend
+						img(src="./images/icon-settings.svg")
+						| Surveys
+					ul.menu.vertical
+						li: a(href="#") View Surveys
+
+
+
+
+
+
+
+
+

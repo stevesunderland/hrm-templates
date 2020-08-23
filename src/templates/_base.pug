@@ -1,0 +1,24 @@
+block vars
+	- var pagename
+
+doctype html
+html.no-js(lang="en")
+	head
+		meta(charset="utf-8")
+		meta(http-equiv="x-ua-compatible", content="ie=edge")
+		meta(name="viewport", content="width=device-width, initial-scale=1.0")
+		link(rel="stylesheet", href="./css/app.css?v=0.0.1")
+
+		title= (pagename ? pagename + ' | ' : '') +  'HRM'
+		meta(name="description" content='HRM')
+
+	body
+
+		main.row.align-top
+			.top-stripe
+			section.sidebar.column
+				include _navigation
+			section.content.column
+				block content
+
+		script(src='./js/app.min.js?v=0.0.1')

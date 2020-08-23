@@ -1,0 +1,36 @@
+img.logo(src="./images/hrm-logo.png", alt="HRM Partners Web Portal")
+span WEB PORTAL
+
+ul.menu.vertical
+	for item in navigation
+		li(class=( item.title == pagename ? 'active' : '' ))
+			a(href=item.link)
+				.row.collapse.align-middle
+					.column.shrink
+						img(src='.'+item.icon)
+					.column
+						span= item.title
+hr.double(style="margin-top: 0;")
+//- button.button.secondary.clear.black(data-toggle="login-info") View Login Information
+ul.accordion(data-accordion data-allow-all-closed="true")
+	li.accordion-item(data-accordion-item)
+		a.accordion-title(href="#") View Login Information
+		.accordion-content(data-tab-content)
+			.callout.primary
+				h6 Username
+				a(href="#") Yamauchi, Rue
+				hr.dotted
+				h6 Company
+				a(href="#") HRM Demo 2
+				hr.dotted
+				h6 Pseudo User
+				a(href="#") Yamauchi, Ryuji
+			button.button.tiny.secondary.hollow.shadow
+				img(src="./images/icon-pencil.svg")
+				| Change
+
+
+hr.double
+button.button.secondary.clear.expanded.logout-button
+	img(src="./images/icon-close-circle.svg")
+	span Log Out
