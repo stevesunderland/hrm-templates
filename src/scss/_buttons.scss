@@ -35,10 +35,18 @@
 	&.white {
 		background-color: $white;
 		color: #1C7293;
+
+		&:hover {
+			background-color: #D8F5FE;
+		}
 	}
 
 	&.primary {
 		color: $white;
+
+		&:hover {
+			color: $white;
+		}
 	}
 
 	&.large {

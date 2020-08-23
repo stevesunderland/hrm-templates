@@ -1,5 +1,3 @@
-- password help icon
-- big button hovers
 - select color?
 - text link colors
 - sidebar change button
