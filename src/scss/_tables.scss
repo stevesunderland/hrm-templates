@@ -1,0 +1,47 @@
+/* TABLES */
+
+table {
+	tr:not(.extra-header) {
+		th {
+			border-bottom: 3px solid #9EB3C2;
+		}
+	}
+
+	.extra-header {
+		th {
+			padding: 0;
+		}
+	}
+
+	td {
+		border-bottom: 0.5px solid rgba(#9EB3C2, 0.5);
+		line-height: 1.1;
+
+		&.border-left {
+			border-left: 0.5px solid rgba(#9EB3C2, 0.5);
+		}
+		&.border-right {
+			border-right: 0.5px solid rgba(#9EB3C2, 0.5);
+		}
+
+		&.border-left-large {
+			border-left: 3px solid rgba(#9EB3C2, 1);
+		}
+		&.border-right-large {
+			border-right: 3px solid rgba(#9EB3C2, 1);
+		}
+
+		&.no-padding {
+			padding-left: 0;
+			padding-right: 0;
+			text-align: center;
+		}
+
+	}
+
+	td {
+		input[type="checkbox"] {
+			margin-bottom: 0;
+		}
+	}
+}

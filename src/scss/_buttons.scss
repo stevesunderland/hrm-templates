@@ -1,0 +1,72 @@
+/* BUTTONS */
+
+.button {
+	&.secondary {
+		color: $dark-gray !important;
+		&.hollow {
+			&:hover {
+				border-color: $secondary-color;
+			}
+		}
+
+		&:hover {
+			color: $primary-color !important;
+		}
+	}
+
+	img {
+		margin-right: 1em;
+		filter: saturate(0);
+	}
+	&:hover, &:active, &:focus {
+		img {
+			filter: none;
+		}
+	}
+
+	&.shadow {
+		box-shadow: 0 2px 2px rgba($black, 0.1);
+	}
+
+	&.black {
+		color: $black !important;
+	}
+
+	&.white {
+		background-color: $white;
+		color: #1C7293;
+	}
+
+	&.primary {
+		color: $white;
+	}
+
+	&.large {
+		min-width: 8em;
+		font-weight: 600;
+		margin-left: 0.5em;
+		margin-right: 0.5em;
+
+		&.shadow {
+			box-shadow: 0 0 4px #A5B2AD;
+		}
+
+	}
+
+	&.gradient {
+		position: relative;
+
+		&:after {
+			content: "";
+			display: block;
+			height: 50%;
+			width: 95%;
+			background: linear-gradient(to bottom, rgba($black, 0.06), rgba($black, 0));
+			position: absolute;
+			bottom: 0;
+			left: 50%;
+			transform: translateX(-50%);
+			border-radius: 5px;
+		}
+	}
+}

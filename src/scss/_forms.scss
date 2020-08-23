@@ -1,0 +1,79 @@
+/* FORMS */
+
+.form-panel {
+	background-color: #F5F8FA;
+	border: 1px solid #DFE6EB;
+	padding: 2em 1em 2em;
+	border-radius: $global-radius;
+	margin-top: 1em;
+	margin-bottom: 1em;
+
+	hr {
+		margin-left: -1em;
+		margin-right: -1em;
+		border-top: 0;
+		border-bottom: 1px solid #C9D5DD;
+	}
+
+
+}
+
+.fieldset {
+	border-radius: 8px;
+
+	legend {
+	    margin-bottom: -0.65em;
+	}
+}
+
+fieldset:not(.fieldset) {
+	legend {
+		font-weight: 500;
+		font-size: 16px;
+		color: $black;
+	}
+}
+
+.input-group-button {
+	.button {
+		img {
+			margin-right: 0;
+		}
+	}
+}
+
+input[aria-describedby] {
+	// margin-bottom: 0;
+}
+
+label {
+	position: relative;
+
+	span.required {
+		color: $alert-color;
+	}
+
+	button.password-help {
+		position: absolute;
+		display: block;
+		height: 22px;
+		width: 22px;
+		background-color: $white;
+		border: 1px solid #9EB3C2;
+		box-shadow: 0 2px 1px rgba($black, 0.1);
+		border-radius: 1000px;
+		background-image: url(../images/icon-question.svg);
+		background-position: center center;
+		background-repeat: no-repeat;
+		background-size: auto 12px;
+		right: 0.5em;
+		top: 50%;
+		// transform: translateY(-50%);
+	}
+
+}
+
+select {
+	padding-right: 2em;
+	background-position: right -1em center;
+}

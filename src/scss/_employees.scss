@@ -1,0 +1,63 @@
+/* EMPLOYEE TABS */
+
+.tabs-container {
+	padding-left: 2em;
+	padding-right: 2em;
+	background-color: rgba(#9EB3C2, 0.2);
+}
+
+.files-table {
+	input[type="checkbox"] {
+		@extend .fancy-checkbox;
+	}
+}
+
+.thumbnail-wrapper {
+	position: relative;
+
+	.thumbnail-edit {
+		position: absolute;
+		bottom: 0;
+		right: 1em;
+		text-indent: -9999px;
+		height: 32px;
+		width: 32px;
+		border-radius: 1000px;
+		background-color: #fff;
+		box-shadow: 0 0 4px #A5B2AD;
+		background-image: url(../images/icon-pencil.svg);
+		background-position: center center;
+		background-repeat: no-repeat;
+		cursor: pointer;
+
+		&:focus {
+			background-color: #114B5F;
+			background-image: url(../images/icon-pencil-white.svg);
+		}
+	}
+}
+
+.file-link {
+	position: relative;
+	display: inline-block;
+	padding-right: 2em;
+
+	&:after {
+		content: "";
+		position: absolute;
+		display: block;
+		height: 22px;
+		width: 22px;
+		background-color: $white;
+		border: 1px solid #9EB3C2;
+		box-shadow: 0 2px 1px rgba($black, 0.1);
+		border-radius: 1000px;
+		background-image: url(../images/icon-question.svg);
+		background-position: center center;
+		background-repeat: no-repeat;
+		background-size: auto 12px;
+		right: 0;
+		top: 50%;
+		transform: translateY(-50%);
+	}
+}

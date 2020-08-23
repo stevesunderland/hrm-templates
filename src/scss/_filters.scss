@@ -1,0 +1,32 @@
+/* FILTERS */
+
+.filters {
+	.button {
+		// padding-top: 0.5em;
+		// padding-bottom: 0.5em;
+		margin-bottom: 0;
+		// margin-left: 0.5em;
+
+		&.shadow {
+			padding-top: 0.5em;
+			padding-bottom: 0.5em;
+			padding-left: 0.75em;
+			padding-right: 0.75em;
+			margin-left: 1em;
+		}
+	}
+	.input-group {
+		margin-bottom: 0;
+
+		.input-group-field {
+			border-right: 0;
+			border-top-left-radius: $global-radius;
+			border-bottom-left-radius: $global-radius;
+		}
+		.input-group-button .button {
+			border-top-right-radius: $global-radius;
+			border-bottom-right-radius: $global-radius;
+
+		}
+	}
+}
