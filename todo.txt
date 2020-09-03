@@ -1,3 +1,2 @@
-- select color?
 - text link colors
 - sidebar change button

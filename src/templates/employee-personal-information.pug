@@ -1,7 +1,7 @@
 extends _base
 
 block vars
-	- pagename = "Employees"
+	- pagename = "Employee | Personal Information"
 
 block content
 	include _header-employee
@@ -16,8 +16,5 @@ block content
 
 
 
-	section.page-content.tabs-content
-		.tabs-panel#personal-information.is-active
-			include _employee-form-personal-info
-		.tabs-panel#files
-			include _employee-form-files
+	section#employee-personal-information.page-content(style="padding-top: 1em;")
+		include _employee-form-personal-info

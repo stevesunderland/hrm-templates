@@ -8,7 +8,13 @@ main {
 	min-width: 1000px !important;
 }
 
+/* Disable printing href values  */
+@media print {
+	a[href]:after {
+	    content: "" !important;
+	}
 
+}
 
 
 
@@ -86,3 +92,158 @@ header {
 		font-size: 16px;
 	}
 }
+
+/* LOGIN PAGE */
+
+#login {
+	background-color: #7DC4D9;
+
+	.logo {
+		position: absolute;
+		top: 2em;
+		left: 2em;
+		width: 184px;
+	}
+	.row {
+		height: 100vh;
+	}
+
+
+	.button {
+		margin-left: 0;
+	}
+	.card {
+		box-shadow: 0 3px 3px rgba($black, 0.15);
+		border: 0;
+	}
+	.card-divider {
+		@extend .gradient-light;
+
+		h1 {
+			margin: 0 auto;
+		}
+	}
+	form {
+		padding-top: 1em;
+		input[type="text"], input[type="password"] {
+			font-size: 16px;
+			height: auto;
+		}
+	}
+}
+
+
+/* DASHBOARD */
+
+#dashboard {
+	padding-top: 1em;
+	padding-left: 20px;
+	padding-right: 20px;
+	background-color: #E9F0F4;
+
+	& > .row > .column {
+		margin-bottom: 20px;
+	}
+
+	h3 {
+		font-size: 16px;
+		font-weight: 600;
+	}
+
+	.card {
+		border: 0;
+		border-radius: 4px;
+		box-shadow: 2px 2px 2px #C9D5DD;
+		// margin-bottom: 2em;
+		position: relative;
+
+		height: 100%;
+		padding-bottom: 2em;
+
+		.card-footer {
+			position: absolute;
+			left: 1em;
+			bottom: 1em;
+		}
+
+		.card-section {
+			// padding-bottom: 0;
+		}
+
+		.card-divider {
+			background-color: #fff;
+			// border-bottom: 5px solid;
+			position: relative;
+			margin-bottom: 6px;
+			// border-image-slice: 1;
+
+			&:after {
+				content: "";
+				display: block;
+				position: absolute;
+				bottom: -6px;
+				left: 0;
+				height: 6px;
+				width: 100%;
+				background: linear-gradient(to bottom, #DFE6EB, rgba(#DFE6EB, 0) )
+
+
+			}
+		}
+	}
+
+	.news {
+		a:hover {
+			text-decoration: underline;
+		}
+		hr {
+			border-top: 0;
+			border-bottom: 3px solid #9EB3C2;
+		}
+		padding-bottom: 0;
+	}
+	ul {
+		@extend .no-bullet;
+
+		&.list {
+
+			li {
+				padding-top: 4px;
+				padding-bottom: 4px;
+				border-bottom: 1px solid rgba(#9EB3C2, 0.5);
+
+				img {
+					margin-right: 1em;
+				}
+
+				&:last-child {
+					border-bottom: 0;
+				}
+				p {
+					margin-bottom: 0;
+				}
+			}
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

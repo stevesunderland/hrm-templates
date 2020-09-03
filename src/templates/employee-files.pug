@@ -1,0 +1,18 @@
+extends _base
+
+block vars
+	- pagename = "Employee | Personal Information"
+
+block content
+	include _header-employee
+
+	section.tabs-container
+		ul.tabs#employee-tabs
+			li.tabs-title: a(href="./employee-personal-information") Personal Information
+			li.tabs-title: a(href="#") Job Information
+			li.tabs-title: a(href="./employee-compensation") Compensation
+			li.tabs-title: a(href="#") Certificates and Training
+			li.tabs-title.is-active(aria-selected="true"): a(href="./employee-files") Files
+
+	section#employee-files.page-content(style="padding-top: 1em;")
+		include _employee-form-files

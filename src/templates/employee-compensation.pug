@@ -1,0 +1,41 @@
+extends _base
+
+block vars
+	- pagename = "Employee | Personal Information"
+
+block content
+	include _header-employee
+
+	section.tabs-container
+		ul.tabs#employee-tabs
+			li.tabs-title: a(href="./employee-personal-information") Personal Information
+			li.tabs-title: a(href="#") Job Information
+			li.tabs-title.is-active(aria-selected="true"): a(href="./employee-compensation") Compensation
+			li.tabs-title: a(href="#") Certificates and Training
+			li.tabs-title: a(href="./employee-files") Files
+
+	section#employee-files.page-content(style="padding-top: 1em;")
+		table.table
+			thead
+				tr
+					th Edit
+					th Start Date
+					th End Date
+					th Rate Frequency
+					th Annualized Type
+					th Reason
+			tbody
+				tr
+					td: a(href="#") Edit
+					td 01/01/2017
+					td Current
+					td $1,500 Semi-Monthly
+					td $36,000.00 Salary
+					td Other
+				tr
+					td: a(href="#") Edit
+					td 10/01/2016
+					td 12/31/2001
+					td $13.00 Hourly
+					td $27,040.00 Salary
+					td Other

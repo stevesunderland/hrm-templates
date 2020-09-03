@@ -43,7 +43,7 @@ block content
 				for i in new Array(21)
 					tr
 						td(style="padding: 3px;"): img(src=faker.image.avatar(), width="34")
-						td: a(href="./employee.html")= faker.name.findName()
+						td: a(href="./employee-personal-information.html")= faker.name.findName()
 						td= faker.address.city() + ' ' + offices[Math.floor(Math.random() * offices.length)]
 						td= faker.name.jobTitle()
 						td= faker.name.jobArea()
