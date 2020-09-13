@@ -17,7 +17,112 @@ block content
 					img(src="./images/icon-posts.svg")
 					| View Posts
 				| |
-				button.button.secondary.clear
+				a.button.secondary.clear(href="#" onClick="window.history.back()")
 					img(src="./images/icon-back.svg")
 					| Log Off
-	section.page-content
+	section#dashboard.page-content
+		.row
+			.column
+				.card.news
+					.card-section
+						h3 What's New
+						hr
+						ul.no-bullet
+							for i in new Array(5)
+								li: a(href="#")= faker.lorem.sentence()
+
+		.row.small-up-3
+			.column
+				.card.employees
+					.card-divider
+						h3 Employees
+					.card-section
+						ul.list
+							for i in new Array(5)
+								li
+									a(href="/employee-personal-information")
+										.row.collapse
+											.column.shrink
+												img(src=faker.image.avatar(), style="width: 22px;")
+											.column
+												span= faker.name.findName()
+
+					.card-footer
+						a(href="#") GO &rarr;
+			.column
+				.card.job-description
+					.card-divider
+						h3 Job Description
+					.card-section
+						ul.list
+							for i in new Array(3)
+								li
+									span= faker.name.findName()
+									p: a(href="#") JD COMPLETED
+
+					.card-footer
+						a(href="#") GO &rarr;
+
+			.column
+				.card
+					.card-divider
+						h3 Performance
+					.card-section
+						ul.list
+							for i in new Array(3)
+								li
+									span= faker.name.findName()
+									p: a(href="#") JD COMPLETED
+
+					.card-footer
+						a(href="#") GO &rarr;
+			.column
+				.card
+					.card-divider
+						h3 HR Policies
+					.card-section
+						span 2 New Policies Added
+						p
+							a(href="#") Employee Warning Form_B…<br>
+							a(href="#") Sample Electronic Employee…<br>
+							span 3+ New Policies Added<br>
+							a(href="#") BUSINESS TRIP PERMISSION…<br>
+							a(href="#") DISABILITY TIME OFF REQU…<br>
+							a(href="#") EXPENSE FORMS
+
+					.card-footer
+						a(href="#") GO &rarr;
+
+
+			.column
+				.card
+					.card-divider
+						h3 Attendance
+					.card-section
+						ul.list
+							for i in new Array(5)
+								li
+									a(href="/employee-personal-information")
+										.row.collapse
+											.column.shrink
+												img(src=faker.image.avatar(), style="width: 22px;")
+											.column
+												span= faker.name.findName()
+					.card-footer
+						a(href="#") GO &rarr;
+			.column
+				.card
+					.card-divider
+						h3 Time Off
+					.card-section
+						ul.list
+							for i in new Array(5)
+								li
+									a(href="/employee-personal-information")
+										.row.collapse
+											.column.shrink
+												img(src=faker.image.avatar(), style="width: 22px;")
+											.column
+												span= faker.name.findName()
+					.card-footer
+						a(href="#") GO &rarr;
