@@ -1,0 +1,379 @@
+form.form-panel(action="")
+	h4 Personnel Files
+	table.files-table
+		thead
+			tr.extra-header
+				th
+				th
+				th
+				th
+				th
+				th
+				th
+				th.text-center(colspan="2") Permission
+				th
+			tr
+				th(width="300" colspan="3") Section # - Description &nbsp; <a href="#">+ Add Section</a>
+				th(colspan="4") Folder Description (Checklist)
+				th Stf.
+				th Mgr.
+				th()
+
+		tbody
+			// SECTION 1
+			tr(valign="top")
+				td.border-right(rowspan="3" width="40"): img(src="./images/icon-file-upload.svg")
+				td.border-right(rowspan="3" width="40"): img(src="./images/icon-file-download.svg")
+				td.border-right-large(rowspan="3")
+					strong Section 1
+					| &nbsp; (&nbsp;<a href="#">Edit</a>&nbsp;|&nbsp;<a href="#">x</a>&nbsp;)
+					p <span class="text-primary">*</span> Employee data and pay status records including:
+				td.border-right(width="40")
+				td.border-right(width="40"): img(src="./images/icon-file-download.svg")
+				td Check List for Personnel File
+				td
+				td.border-left.no-padding
+					input(type="checkbox" id="checkbox1")
+					label(for="checkbox1")
+				td.border-left.no-padding
+					input(type="checkbox" id="checkbox2")
+					label(for="checkbox2")
+				td.border-left <a href="#">Edit</a>&nbsp;|&nbsp;<a href="#" title="Delete">x</a>
+			tr(valign="top")
+				td.border-right: img(src="./images/icon-file-upload.svg")
+				td.border-right: img(src="./images/icon-file-download.svg")
+				td Basic Employee Data
+				td
+				td.border-left.no-padding
+					input(type="checkbox" id="checkbox3")
+					label(for="checkbox3")
+				td.border-left.no-padding
+					input(type="checkbox" id="checkbox4")
+					label(for="checkbox4")
+				td.border-left <a href="#">Edit</a>&nbsp;|&nbsp;<a href="#" title="Delete">x</a>
+			tr(valign="top")
+				td.border-right: img(src="./images/icon-file-upload.svg")
+				td.border-right: img(src="./images/icon-file-download.svg")
+				td Payroll Deduction and Set-off Agreement
+				td.text-right: a(href="#") (&nbsp;+&nbsp;Folder&nbsp;)
+				td.border-left.no-padding
+					input(type="checkbox" id="checkbox5")
+					label(for="checkbox5")
+				td.border-left.no-padding
+					input(type="checkbox" id="checkbox6")
+					label(for="checkbox6")
+				td.border-left <a href="#">Edit</a>&nbsp;|&nbsp;<a href="#" title="Delete">x</a>
+
+
+			// SECTION 2
+			tr(valign="top")
+				td.border-right: img(src="./images/icon-file-upload.svg")
+				td.border-right: img(src="./images/icon-file-download.svg")
+				td.border-right-large
+					strong Section 2
+					| &nbsp; (&nbsp;<a href="#">Edit</a>&nbsp;|&nbsp;<a href="#">x</a>&nbsp;)
+					p <span class="text-primary">*</span> Employee status change
+				td.border-right
+				td.border-right
+				td Employee Status Change Form
+				td.text-right: a(href="#") (&nbsp;+&nbsp;Folder&nbsp;)
+				td.border-left.no-padding
+					input(type="checkbox" checked id="checkbox16")
+					label(for="checkbox16")
+				td.border-left.no-padding
+					input(type="checkbox" checked id="checkbox17")
+					label(for="checkbox17")
+				td.border-left <a href="#">Edit</a>&nbsp;|&nbsp;<a href="#" title="Delete">x</a>
+
+
+
+			// SECTION 3
+			tr(valign="top")
+				td.border-right(rowspan="4"): img(src="./images/icon-file-upload.svg")
+				td.border-right(rowspan="4"): img(src="./images/icon-file-download.svg")
+				td.border-right-large(rowspan="4")
+					strong Section 3
+					| &nbsp; (&nbsp;<a href="#">Edit</a>&nbsp;|&nbsp;<a href="#">x</a>&nbsp;)
+					p <span class="text-primary">*</span> Employment selection  process records
+				td.border-right
+				td.border-right: img(src="./images/icon-file-download.svg")
+				td Job Description
+				td
+				td.border-left.no-padding
+					input(type="checkbox" id="checkbox7")
+					label(for="checkbox7")
+				td.border-left.no-padding
+					input(type="checkbox" id="checkbox8")
+					label(for="checkbox8")
+				td.border-left <a href="#">Edit</a>&nbsp;|&nbsp;<a href="#" title="Delete">x</a>
+			tr(valign="top")
+				td.border-right: img(src="./images/icon-file-upload.svg")
+				td.border-right: img(src="./images/icon-file-download.svg")
+				td Resume
+				td
+				td.border-left.no-padding
+					input(type="checkbox" checked id="checkbox18")
+					label(for="checkbox18")
+				td.border-left.no-padding
+					input(type="checkbox" checked id="checkbox19")
+					label(for="checkbox19")
+				td.border-left <a href="#">Edit</a>&nbsp;|&nbsp;<a href="#" title="Delete">x</a>
+			tr(valign="top")
+				td.border-right: img(src="./images/icon-file-upload.svg")
+				td.border-right: img(src="./images/icon-file-download.svg")
+				td Employment Application Form
+				td.text-right: a(href="#") (&nbsp;+&nbsp;Folder&nbsp;)
+				td.border-left.no-padding
+					input(type="checkbox" id="checkbox9")
+					label(for="checkbox9")
+				td.border-left.no-padding
+					input(type="checkbox" id="checkbox10")
+					label(for="checkbox10")
+				td.border-left <a href="#">Edit</a>&nbsp;|&nbsp;<a href="#" title="Delete">x</a>
+			tr(valign="top")
+				td.border-right: img(src="./images/icon-file-upload.svg")
+				td.border-right
+				td Employment Offer/Acceptance Letter
+				td.text-right: a(href="#") (&nbsp;+&nbsp;Folder&nbsp;)
+				td.border-left.no-padding
+					input(type="checkbox" id="checkbox11")
+					label(for="checkbox11")
+				td.border-left.no-padding
+					input(type="checkbox" id="checkbox12")
+					label(for="checkbox12")
+				td.border-left <a href="#">Edit</a>&nbsp;|&nbsp;<a href="#" title="Delete">x</a>
+
+
+			// SECTION 4
+			tr(valign="top")
+				td.border-right(rowspan="2"): img(src="./images/icon-file-upload.svg")
+				td.border-right(rowspan="2"): img(src="./images/icon-file-download.svg")
+				td.border-right-large(rowspan="2")
+					strong Section 4
+					| &nbsp; (&nbsp;<a href="#">Edit</a>&nbsp;|&nbsp;<a href="#">x</a>&nbsp;)
+					p <span class="text-primary">*</span> Employee development records
+				td.border-right
+				td.border-right: img(src="./images/icon-file-download.svg")
+				td Records of Training  Courses Completed
+				td.border-right
+				td.border-left.no-padding
+					input(type="checkbox" id="checkbox13")
+					label(for="checkbox13")
+				td.border-left.no-padding
+					input(type="checkbox" id="checkbox14")
+					label(for="checkbox14")
+				td.border-left <a href="#">Edit</a>&nbsp;|&nbsp;<a href="#" title="Delete">x</a>
+			tr(valign="top")
+				td.border-right: img(src="./images/icon-file-upload.svg")
+				td.border-right
+				td Career Planning and Counselling Documents
+				td.text-right: a(href="#") (&nbsp;+&nbsp;Folder&nbsp;)
+				td.border-left.no-padding
+					input(type="checkbox" checked id="checkbox20")
+					label(for="checkbox20")
+				td.border-left.no-padding
+					input(type="checkbox" checked id="checkbox21")
+					label(for="checkbox21")
+				td.border-left <a href="#">Edit</a>&nbsp;|&nbsp;<a href="#" title="Delete">x</a>
+
+
+			// SECTION 5
+			tr(valign="top")
+				td.border-right(rowspan="9"): button: img(src="./images/icon-file-upload.svg")
+				td.border-right(rowspan="9"): button: img(src="./images/icon-file-download.svg")
+				td.border-right-large(rowspan="9")
+					strong Section 5
+					| &nbsp; (&nbsp;<a href="#">Edit</a>&nbsp;|&nbsp;<a href="#">x</a>&nbsp;)
+					p Miscellaneous and separation records
+				td.border-right
+				td.border-right: img(src="./images/icon-file-download.svg")
+				td Receipt for Employee Handbook
+				td
+				td.border-left.no-padding
+					input(type="checkbox" id="checkbox15")
+					label(for="checkbox15")
+				td.border-left.no-padding
+					input(type="checkbox" id="checkbox16")
+					label(for="checkbox16")
+				td.border-left <a href="#">Edit</a>&nbsp;|&nbsp;<a href="#" title="Delete">x</a>
+			tr(valign="top")
+				td.border-right: img(src="./images/icon-file-upload.svg")
+				td.border-right
+				td Request for Leave of Absence
+				td
+				td.border-left.no-padding
+					input(type="checkbox" checked id="checkbox22")
+					label(for="checkbox22")
+				td.border-left.no-padding
+					input(type="checkbox" checked id="checkbox23")
+					label(for="checkbox23")
+				td.border-left <a href="#">Edit</a>&nbsp;|&nbsp;<a href="#" title="Delete">x</a>
+			tr(valign="top")
+				td.border-right: img(src="./images/icon-file-upload.svg")
+				td.border-right: img(src="./images/icon-file-download.svg")
+				td Request for Vacation
+				td
+				td.border-left.no-padding
+					input(type="checkbox" checked id="checkbox24")
+					label(for="checkbox24")
+				td.border-left.no-padding
+					input(type="checkbox" checked id="checkbox25")
+					label(for="checkbox25")
+				td.border-left <a href="#">Edit</a>&nbsp;|&nbsp;<a href="#" title="Delete">x</a>
+			tr(valign="top")
+				td.border-right: img(src="./images/icon-file-upload.svg")
+				td.border-right: img(src="./images/icon-file-download.svg")
+				td Any other agreements, acknowledgments and requests
+				td
+				td.border-left.no-padding
+					input(type="checkbox" checked id="checkbox26")
+					label(for="checkbox26")
+				td.border-left.no-padding
+					input(type="checkbox" checked id="checkbox27")
+					label(for="checkbox27")
+				td.border-left <a href="#">Edit</a>&nbsp;|&nbsp;<a href="#" title="Delete">x</a>
+
+			tr(valign="top")
+				td.border-right: img(src="./images/icon-file-upload.svg")
+				td.border-right: img(src="./images/icon-file-download.svg")
+				td Attendance Records
+				td
+				td.border-left.no-padding
+					input(type="checkbox" checked id="checkbox28")
+					label(for="checkbox28")
+				td.border-left.no-padding
+					input(type="checkbox" checked id="checkbox29")
+					label(for="checkbox29")
+				td.border-left <a href="#">Edit</a>&nbsp;|&nbsp;<a href="#" title="Delete">x</a>
+			tr(valign="top")
+				td.border-right: img(src="./images/icon-file-upload.svg")
+				td.border-right: img(src="./images/icon-file-download.svg")
+				td Voluntary resignation
+				td
+				td.border-left.no-padding
+					input(type="checkbox" checked id="checkbox30")
+					label(for="checkbox30")
+				td.border-left.no-padding
+					input(type="checkbox" checked id="checkbox31")
+					label(for="checkbox31")
+				td.border-left <a href="#">Edit</a>&nbsp;|&nbsp;<a href="#" title="Delete">x</a>
+			tr(valign="top")
+				td.border-right: img(src="./images/icon-file-upload.svg")
+				td.border-right: img(src="./images/icon-file-download.svg")
+				td Exit Interview Form
+				td
+				td.border-left.no-padding
+					input(type="checkbox" checked id="checkbox32")
+					label(for="checkbox32")
+				td.border-left.no-padding
+					input(type="checkbox" checked id="checkbox33")
+					label(for="checkbox33")
+				td.border-left <a href="#">Edit</a>&nbsp;|&nbsp;<a href="#" title="Delete">x</a>
+			tr(valign="top")
+				td.border-right: img(src="./images/icon-file-upload.svg")
+				td.border-right: img(src="./images/icon-file-download.svg")
+				td Separation Checklist
+				td
+				td.border-left.no-padding
+					input(type="checkbox" checked id="checkbox34")
+					label(for="checkbox34")
+				td.border-left.no-padding
+					input(type="checkbox" checked id="checkbox35")
+					label(for="checkbox35")
+				td.border-left <a href="#">Edit</a>&nbsp;|&nbsp;<a href="#" title="Delete">x</a>
+			tr(valign="top")
+				td.border-right: img(src="./images/icon-file-upload.svg")
+				td.border-right: img(src="./images/icon-file-download.svg")
+				td Challenges to Claims such as Unemployment Compensation
+				td.text-right: a(href="#") (&nbsp;+&nbsp;Folder&nbsp;)
+				td.border-left.no-padding
+					input(type="checkbox" checked id="checkbox36")
+					label(for="checkbox36")
+				td.border-left.no-padding
+					input(type="checkbox" checked id="checkbox37")
+					label(for="checkbox37")
+				td.border-left <a href="#">Edit</a>&nbsp;|&nbsp;<a href="#" title="Delete">x</a>
+
+	br
+	hr
+
+
+	h4 Confidential Files
+
+	table.files-table
+		thead
+			th(width="300") Section # - Description &nbsp; <a href="#">+ Add Section</a>
+			th(colspan="4") Folder Description (Checklist)
+			th
+
+		tbody
+			// SECTION 1
+			tr(valign="top")
+				td.border-right-large(rowspan="7")
+					strong Section 1
+					| &nbsp; (&nbsp;<a href="#">Edit</a>&nbsp;|&nbsp;<a href="#">x</a>&nbsp;)
+					p <span class="text-primary">*</span> General Confidential File
+				td.border-right(width="40"): img(src="./images/icon-file-upload.svg")
+				td.border-right(width="40"): img(src="./images/icon-file-download.svg")
+				td Interview Evaluation
+				td
+				td.border-left <a href="#">Edit</a>&nbsp;|&nbsp;<a href="#" title="Delete">x</a>
+			tr(valign="top")
+				td.border-right: img(src="./images/icon-file-upload.svg")
+				td.border-right: img(src="./images/icon-file-download.svg")
+				td Pre-Employment Reference Check Form
+				td
+				td.border-left <a href="#">Edit</a>&nbsp;|&nbsp;<a href="#" title="Delete">x</a>
+			tr(valign="top")
+				td.border-right: img(src="./images/icon-file-upload.svg")
+				td.border-right: img(src="./images/icon-file-download.svg")
+				td Credit Checks and Reports
+				td
+				td.border-left <a href="#">Edit</a>&nbsp;|&nbsp;<a href="#" title="Delete">x</a>
+			tr(valign="top")
+				td.border-right: img(src="./images/icon-file-upload.svg")
+				td.border-right: img(src="./images/icon-file-download.svg")
+				td Employment Eligibility Verification Form (I-9)
+				td
+				td.border-left <a href="#">Edit</a>&nbsp;|&nbsp;<a href="#" title="Delete">x</a>
+			tr(valign="top")
+				td.border-right: img(src="./images/icon-file-upload.svg")
+				td.border-right: img(src="./images/icon-file-download.svg")
+				td Dependent and Beneficiary Information
+				td
+				td.border-left <a href="#">Edit</a>&nbsp;|&nbsp;<a href="#" title="Delete">x</a>
+			tr(valign="top")
+				td.border-right: img(src="./images/icon-file-upload.svg")
+				td.border-right: img(src="./images/icon-file-download.svg")
+				td Benefit Plan Choices
+				td
+				td.border-left <a href="#">Edit</a>&nbsp;|&nbsp;<a href="#" title="Delete">x</a>
+			tr(valign="top")
+				td.border-right: img(src="./images/icon-file-upload.svg")
+				td.border-right: img(src="./images/icon-file-download.svg")
+				td Any Information Regarding Legal Actions
+				td.text-right: a(href="#") (&nbsp;+&nbsp;Folder&nbsp;)
+				td.border-left <a href="#">Edit</a>&nbsp;|&nbsp;<a href="#" title="Delete">x</a>
+
+
+			// SECTION 2
+			tr(valign="top")
+				td(rowspan="2").border-right-large
+					strong Section 2
+					| &nbsp; (&nbsp;<a href="#">Edit</a>&nbsp;|&nbsp;<a href="#">x</a>&nbsp;)
+					p <span class="text-primary">*</span> Covid Health Information
+				td.border-right: img(src="./images/icon-file-upload.svg")
+				td.border-right: img(src="./images/icon-file-download.svg")
+				td Employee Status Change Form
+				td
+				td.border-left <a href="#">Edit</a>&nbsp;|&nbsp;<a href="#" title="Delete">x</a>
+			tr(valign="top")
+				td.border-right: img(src="./images/icon-file-upload.svg")
+				td.border-right: img(src="./images/icon-file-download.svg")
+				td Doctor Visits and Records
+				td
+				td.border-left <a href="#">Edit</a>&nbsp;|&nbsp;<a href="#" title="Delete">x</a>
+
+	.text-center(style="margin-top: 3em;")
+		button.button.large.gradient.shadow.white Cancel
+		button.button.large.gradient.shadow.primary(type="submit") Save Permissions

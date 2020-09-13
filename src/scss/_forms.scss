@@ -16,6 +16,7 @@
 	}
 
 
+
 }
 
 .fieldset {
@@ -48,6 +49,7 @@ input[aria-describedby] {
 
 label {
 	position: relative;
+	line-height: 1.5;
 
 	span.required {
 		color: $alert-color;
@@ -76,4 +78,19 @@ label {
 select {
 	padding-right: 2em;
 	background-position: right -1em center;
+	// background: #FFFFFF;
+	border: 1px solid #979797;
+	box-shadow: 0 2px 3px 0 rgba(0,0,0,0.10);
+	// border-radius: 6px;
+}
+
+input[readonly] {
+
+	&, &:active, &:focus {
+		background: transparent;
+		border: none;
+		box-shadow: none;
+		padding-left: 0;
+		font-size: 16px;
+	}
 }

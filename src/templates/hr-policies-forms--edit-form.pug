@@ -1,0 +1,47 @@
+extends _base
+
+block vars
+	- pagename = "HR Policies & Forms"
+
+block content
+	header
+		.row.collapse.align-middle
+			.column
+				h1 Edit Form
+				nav(aria-label="You are here:" role="navigation")
+					ul.breadcrumbs
+						li: a(href="./dashboard.html") Home
+						li: a(href="./hr-policies-forms.html") HR Policies &amp; Forms
+						li
+							span.show-for-sr Current:
+							| Edit Form
+
+			.column.shrink
+				a.button.secondary.clear(href="#" onClick="window.history.back()")
+					img(src="./images/icon-back.svg")
+					| Back
+
+	section.page-content
+		br
+
+		h4 Current File: <b>Employee Warning Form_Blank.doc</b>
+
+		form.form-panel
+			p To replace the current file only: please select policy / procedure to upload:
+			label.button.hollow.secondary.white(for="file_upload" style="font-size: 16px;") Choose file
+			input(type="file" style="display: none;" id="file_upload")
+
+			br
+			br
+
+			p Type the description for the file. It will appear as pop-up information when user hovers the mouse over <img src="./images/icon-question-circle.svg"> icon.
+			textarea(cols="30", rows="5") Review Period
+
+			br
+			p Manager Only
+			select.small-6(name="")
+				option(disabled selected value="") Select who can view the file
+
+			.text-center(style="margin-top: 2em;")
+				button.button.large.white.gradient.shadow Cancel
+				button.button.large.primary.gradient.shadow(type="submit") Save

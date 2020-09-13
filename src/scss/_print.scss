@@ -1,0 +1,49 @@
+@media print {
+ /* All your print styles go here */
+	 .sidebar {
+	 	border-right: none !important;
+	 	margin-bottom: 1em;
+
+	 	ul, .button, hr {
+	 		display: none;
+	 	}
+	 }
+
+	 main.row {
+	 	display: table;
+	 }
+
+	 header {
+	 	display: none;
+	 }
+}
+
+
+.print-only {
+	@media screen {
+		display: none !important;
+	}
+}
+
+.card, table {
+	page-break-inside: avoid;
+}
+
+.print-header, .print-footer {
+	@extend .print-only;
+}
+
+// .print-header {
+// 	display: table-header-group;
+// }
+// .print-footer {
+// 	display: table-footer-group;
+// 	position: fixed;
+// 	bottom: 0;
+// 	right: 0;
+// 	counter-increment: page;
+
+// 	&:after {
+// 	    content: "Page " counter(page);
+// 	}
+// }

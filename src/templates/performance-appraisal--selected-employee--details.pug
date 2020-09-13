@@ -1,0 +1,337 @@
+extends _base
+
+block vars
+	- pagename = "Job Description"
+
+block content
+	header
+		.row.collapse.align-middle
+			.column
+				h1 Performance Appraisal
+				nav(aria-label="You are here:" role="navigation")
+					ul.breadcrumbs
+						li: a(href="./dashboard.html") Home
+						li: a(href="./performance-appraisal.html") Performance Appraisal
+						li
+							span.show-for-sr Current:
+							| Selected Employee
+
+			.column.shrink
+				a.button.secondary.clear(href="#" onClick="window.print()")
+					img(src="./images/icon-print.svg")
+					| Print
+				| |
+				a.button.secondary.clear(href="#")
+					img(src="./images/icon-duplicate.svg")
+					| Copy this PA
+				| |
+				a.button.secondary.clear(href="#" onClick="window.history.back()")
+					img(src="./images/icon-back.svg")
+					| Back
+
+	section.page-content(style="padding-top: 1em;")
+		.card.box
+			table.unstriped(style="margin-bottom: 0;")
+				thead
+					tr
+						td(colspan="4")
+							h4(style="margin: 0.5em 0;") Current Appraisal Status: <strong class="text-alert">PA Closed</strong>
+
+				tbody
+					tr
+						td.border-right: strong Employee Name
+						td.striped.border-right-large YAMABE, Akinori (MANUFACTURING)
+						td.border-right: strong Appraiser Name
+						td.striped UEDA, Munero (SALES AND MARKETING)
+					tr
+						td.border-right: strong Position
+						td.striped.border-right-large Sales Associate
+						td.border-right: strong Appraiser Title
+						td.striped Sales Manager
+					tr
+						td.border-right: strong Review Period
+						td.striped.border-right-large 2016 1st Half<br>(01/01/2016-06/30/2016)
+						td.border-right
+
+		.card.box
+			.card-content
+				h4 Rating Definitions
+
+			table.unstriped.bordered
+				thead
+					tr
+						th.text-center Value
+						th.text-center Code
+						th Description
+						th Explanation
+				tbody
+					tr
+						td.text-center 4
+						td.text-center -
+						td Excellent
+						td Beyond Expectations
+					tr
+						td.text-center 3
+						td.text-center -
+						td Good
+						td Meeting Expectations
+					tr
+						td.text-center 2
+						td.text-center -
+						td Fair
+						td Meeting expectations in some areas but not others
+					tr
+						td.text-center 1
+						td.text-center -
+						td Unsatisfactory
+						td Not meeting expectations in most areas
+
+
+		.card.box
+			.card-content
+				h4 A. Work Activities Area
+
+			table.bordered
+				thead
+					tr
+						th #
+						th Essential Job Functions
+						th Action Plan
+						th.text-center Weight
+						th.text-center Rating
+				tbody
+					tr
+						td 1
+						td In Service
+						td Installs products and provide training &amp; education to customers on product operation, clinical uses and safety precautions.
+						td.text-center 30%
+						td.text-center 4
+					tr
+						td 2
+						td Sales Support
+						td Develops relationships with physician trainers to support education and training of specialist. Coordinates trainings Assists Service Department in creation of certificates and other educational documentation and records as required.
+						td.text-center 30%
+						td.text-center 3
+					tr
+						td 3
+						td Training / Education
+						td Develops operational and clinical training programs, instructional materials, quick guides and handouts for all products and maintain compliance. Provides clinical training to employees on-line or face to face and phone support to customers and Field Service on operation and clinical uses of Nidek products.
+						td.text-center 5%
+						td.text-center 4
+					tr
+						td 4
+						td Administration
+						td Completes and submits training records and in-service checklists. Documents performance problems and customer concerns to management. Assists QA in investigating adverse events as needed Provides advice to clinical, R&amp;D, technical and marketing.
+						td.text-center 5%
+						td.text-center 4
+					tr
+						td 5
+						td Self Learning
+						td Continually updates knowledge of Ophthalmic procedures and advances in the industry and maintain certification by attending trade shows, workshops and speaking at symposiums.
+						td.text-center 5%
+						td.text-center 4
+					tr.totals
+						td(colspan="3"): strong Total Weighted score for this Area
+						td.text-center: strong 100%
+						td.text-center: strong 4.00
+
+
+		.card.box
+			.card-content
+				h4 Appraiser's Comment
+				textarea(name="", cols="30", rows="5" placeholder="Insert Text Here")
+
+		.card.box
+			.card-content
+				h4 Employee's Comment
+				textarea(name="", cols="30", rows="5" placeholder="Insert Text Here")
+		.card.box
+			.card-content
+				h4.text-alert Managers Only
+				textarea.is-invalid-input(name="", cols="30", rows="5") Insert Text here
+
+
+		.card.box
+			.card-content
+				h4 B. Job Specific Skills Area
+
+			table.bordered
+				thead
+					tr
+						th #
+						th Essential Job Functions
+						th Action Plan
+						th.text-center Weight
+						th.text-center Rating
+				tbody
+					tr
+						td 1
+						td In Service
+						td Installs products and provide training &amp; education to customers on product operation, clinical uses and safety precautions.
+						td.text-center 30%
+						td.text-center 4
+					tr
+						td 2
+						td Sales Support
+						td Develops relationships with physician trainers to support education and training of specialist. Coordinates trainings Assists Service Department in creation of certificates and other educational documentation and records as required.
+						td.text-center 30%
+						td.text-center 3
+					tr
+						td 3
+						td Training / Education
+						td Develops operational and clinical training programs, instructional materials, quick guides and handouts for all products and maintain compliance. Provides clinical training to employees on-line or face to face and phone support to customers and Field Service on operation and clinical uses of Nidek products.
+						td.text-center 5%
+						td.text-center 4
+					tr
+						td 4
+						td Administration
+						td Completes and submits training records and in-service checklists. Documents performance problems and customer concerns to management. Assists QA in investigating adverse events as needed Provides advice to clinical, R&amp;D, technical and marketing.
+						td.text-center 5%
+						td.text-center 4
+					tr
+						td 5
+						td Self Learning
+						td Continually updates knowledge of Ophthalmic procedures and advances in the industry and maintain certification by attending trade shows, workshops and speaking at symposiums.
+						td.text-center 5%
+						td.text-center 4
+					tr.totals
+						td(colspan="3"): strong Total Weighted score for this Area
+						td.text-center: strong 100%
+						td.text-center: strong 4.00
+
+
+		.card.box
+			.card-content
+				h4 C. Goals and Achievements Area
+
+			table.unstriped.bordered
+				thead
+					tr
+						th.text-center #
+						th.text-center Goal
+						th Action Plan
+						th.text-center Weight
+						th.text-center Rating
+				tbody
+					tr
+						td.text-center 1
+						td.text-center Goal 1
+						td Action Plan 1
+						td.text-center 30%
+						td.text-center 4
+					tr
+						td.text-center 2
+						td.text-center Goal 2
+						td Action Plan 2
+						td.text-center 30%
+						td.text-center 3
+					tr
+						td.text-center 3
+						td.text-center Goal 3
+						td Action Plan 3
+						td.text-center 20%
+						td.text-center 4
+					tr
+						td.text-center 4
+						td.text-center Goal 4
+						td Action Plan 4
+						td.text-center 20%
+						td.text-center 4
+					tr.totals
+						td(colspan="3"): strong Total Weighted score for this Area
+						td.text-center: strong 100%
+						td.text-center: strong 3.70
+
+
+		.card.box
+			.card-content
+				h4 Appraiser's Comment
+				textarea(name="", cols="30", rows="5" placeholder="Insert Text Here")
+
+		.card.box
+			.card-content
+				h4 Employee's Comment
+				textarea(name="", cols="30", rows="5" placeholder="Insert Text Here")
+		.card.box
+			.card-content
+				h4.text-alert Managers Only
+				textarea.is-invalid-input(name="", cols="30", rows="5") Insert Text here
+
+		br
+		h3 Weighted Score across Multiple Evaluation Areas
+
+		.card.box
+			.card-content
+				h4 Overall Scores
+			table.unstribed.bordered
+				thead
+					tr
+						th Area
+						th.text-center Weight
+						th Scores from Above
+						th Weighted Rating
+				tbody
+					tr
+						td A. Work Activities Area
+						td.text-center 30%
+						td 4.0
+						td 1.20
+					tr
+						td B. Job Specific Skills Area
+						td.text-center 50%
+						td 4.0
+						td 1.20
+					tr
+						td C. Goals and Achievements Area
+						td.text-center 20%
+						td 3.7
+						td 1.20
+					tr.totals
+						td: strong Grand Total of All Areas
+						td.text-center: strong 100%
+						td: strong This is the final score
+						td: strong 3.94
+
+
+		hr.dark(style="margin: 3em 0;")
+
+		h3 Appraisal History
+
+		.card.box
+			.card-content
+				h4 PA Form Creation
+
+			table.unstriped.bordered
+				thead
+					tr
+						th Status
+						th Signer
+						th Date Singed
+
+				tbody
+					for i in new Array(7)
+						tr
+							td.border-right-large PA Form Approval - Manager's Manager
+							td Munero Ueda
+							td 2016-11-21
+
+
+		.card.box
+			.card-content
+				h4 Appraisal
+
+			table.unstriped.bordered
+				thead
+					tr
+						th Status
+						th Signer
+						th Date Singed
+
+				tbody
+					for i in new Array(7)
+						tr
+							td.border-right-large PA Form Approval - Manager's Manager
+							td Munero Ueda
+							td 2016-11-21
+
+

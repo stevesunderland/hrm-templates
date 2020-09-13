@@ -1,0 +1,80 @@
+extends _base
+
+block vars
+	- pagename = "Performance Appraisal"
+
+block content
+	header
+		.row.collapse.align-middle
+			.column
+				h1 PA Status Report
+				nav(aria-label="You are here:" role="navigation")
+					ul.breadcrumbs
+						li: a(href="./dashboard.html") Home
+						li: a(href="./performance-appraisal.html") Performance Appraisal
+						li
+							span.show-for-sr Current:
+							| PA Status Report
+
+			.column.shrink
+				a.button.secondary.clear(href="#" onClick="window.history.back()")
+					img(src="./images/icon-back.svg")
+					| Back
+
+
+	section.page-content
+		br
+		h3 2016 2nd Half (07/01/2016 ~ 12/31/2016)
+
+		.card.box
+			.card-content
+				h4 Department
+			table.bordered
+				thead
+					tr
+						th Last, First
+						th PA Status
+						th Self<br>Grade
+						th Mgr.<br>Grade
+				tbody
+					tr
+						td <strong>*Global</strong><br><a href="#">MITSUGI</a>, Ryota
+						td PA Review
+						td 0.00
+						td 0.00
+					tr
+						td: strong Human Resources
+						td.text-right: strong Department Average
+						td: strong 0.00
+						td: strong 3.40
+					tr
+						td: strong Manufacturing
+						td.text-right: strong Department Average
+						td: strong 0.00
+						td: strong 0.00
+					tr
+						td
+							strong Sales and Marketing
+							br
+							| <a href="#">TAGAKI</a>, Elena
+						td
+							span.float-right: strong Department Average
+							br
+							| PA Form / Manager Review
+						td: strong 0.00
+						td: strong 0.00
+
+					tr
+						td <a href="#">TAGAKI</a>, Elena
+						td Open
+						td 0.00
+						td 0.00
+					tr
+						td
+						td.text-right Department Average
+						td 0.00
+						td 0.00
+					tr.highlight
+						td.text-right(colspan="2"): strong Company-Wide Average
+						td: strong 0.00
+						td: strong 3.40

@@ -1,0 +1,10 @@
+<svg id="CTA_X_other" data-name="CTA / X other" xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20">
+  <g id="ico_EDIT" data-name="ico EDIT" transform="translate(4.2 1)">
+    <path id="Fill_1" data-name="Fill 1" d="M0,2l2.1-.261L.274,0Z" transform="translate(0 13)" fill="#9eb3c2"/>
+    <path id="Fill_2" data-name="Fill 2" d="M.161,8.012,0,9.189,1.9,11l1.236-.153L11.55,2.834,8.574,0Z" transform="translate(1.05 3)" fill="#9eb3c2"/>
+    <path id="Fill_3" data-name="Fill 3" d="M2.832.145A.535.535,0,0,0,2.461,0a.58.58,0,0,0-.4.159L0,2.123,3.021,5,5.083,3.037A.5.5,0,0,0,5.1,2.3Z" transform="translate(10.5)" fill="#9eb3c2"/>
+  </g>
+  <ellipse id="Oval" cx="2.1" cy="2" rx="2.1" ry="2" transform="translate(15.75 16)" fill="#9eb3c2"/>
+  <ellipse id="Oval-2" data-name="Oval" cx="2.1" cy="2" rx="2.1" ry="2" transform="translate(8.4 16)" fill="#9eb3c2"/>
+  <ellipse id="Oval-3" data-name="Oval" cx="2.1" cy="2" rx="2.1" ry="2" transform="translate(0 16)" fill="#9eb3c2"/>
+</svg>

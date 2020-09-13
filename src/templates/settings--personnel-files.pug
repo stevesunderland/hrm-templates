@@ -1,0 +1,31 @@
+extends _base
+
+block vars
+	- pagename = "Settings"
+
+block content
+	header
+		.row.collapse.align-middle
+			.column
+				h1 Personnel Files
+				nav(aria-label="You are here:" role="navigation")
+					ul.breadcrumbs
+						li: a(href="./dashboard.html") Home
+						li: a(href="./settings.html") Settings
+						li
+							span.show-for-sr Current:
+							| Personnel Files
+
+			.column.shrink
+				a.button.secondary.clear
+					img(src="./images/icon-posts.svg")
+					| New Department
+				| |
+				a.button.secondary.clear(href="#" onClick="window.history.back()")
+					img(src="./images/icon-back.svg")
+					| Back
+
+	section.page-content.settings-page
+
+		include _personnel-files.pug
+

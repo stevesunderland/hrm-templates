@@ -4,6 +4,12 @@
 	&.secondary {
 		color: $dark-gray !important;
 		&.hollow {
+			color: $black !important;
+			border-color: #9EB3C2;
+			// box-shadow: 0 2px 1px rgba($black, 0.1);
+			box-shadow: 0 2px 1px 0 rgba(0,0,0,0.10), inset 0 -3px 0 0 #E8F1F7;
+
+
 			&:hover {
 				border-color: $secondary-color;
 			}

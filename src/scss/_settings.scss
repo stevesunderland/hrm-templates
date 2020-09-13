@@ -73,7 +73,7 @@ $foundation-palette: (
   secondary: #9EB3C2,
   success: #3adb76,
   warning: #ffae00,
-  alert: #F26430,
+  alert: #EE4266,
 );
 $light-gray: #E9EAED;
 $medium-gray: #cacaca;
@@ -159,7 +159,7 @@ $header-styles: (
     'h2': ('font-size': 40),
     'h3': ('font-size': 31),
     'h4': ('font-size': 25),
-    'h5': ('font-size': 20),
+    'h5': ('font-size': 12),
     'h6': ('font-size': 12),
   ),
 );
@@ -805,14 +805,14 @@ $switch-cursor-disabled: not-allowed;
 $table-background: $white;
 $table-color-scale: 5%;
 $table-border: 0;
-$table-padding: rem-calc(8 10 10);
+$table-padding: rem-calc(8 10 8 14);
 // $table-padding: 3px;
 $table-hover-scale: 2%;
 $table-row-hover: darken($table-background, $table-hover-scale);
 $table-row-stripe-hover: darken($table-background, $table-color-scale + $table-hover-scale);
 $table-is-striped: true;
 $table-striped-background: #F5F8FA;
-$table-stripe: even;
+$table-stripe: odd;
 $table-head-background: $white;
 $table-head-row-hover: darken($table-head-background, $table-hover-scale);
 $table-foot-background: smart-scale($table-background, $table-color-scale);

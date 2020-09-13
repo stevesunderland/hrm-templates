@@ -25,12 +25,14 @@ section.content {
 }
 
 section.page-content, section.filters {
-	padding-left: $global-padding;
-	padding-right: $global-padding;
+	padding-left: $global-padding ;
+	padding-right: $global-padding ;
 }
 
 section.page-content {
 	min-height: 660px;
+
+
 }
 
 header {
@@ -73,6 +75,10 @@ header {
 	border: 3px solid $white;
 	outline: 1px solid #D3E1E2;
 }
+
+
+.mb-0 { margin-bottom: 0; }
+.padding { padding: $global-padding; }
 
 /* SETTINGS PAGE */
 
@@ -145,10 +151,7 @@ header {
 		margin-bottom: 20px;
 	}
 
-	h3 {
-		font-size: 16px;
-		font-weight: 600;
-	}
+
 
 	.card {
 		border: 0;
@@ -228,6 +231,58 @@ header {
 }
 
 
+.search-results {
+	padding: 1.5em 1em 1em;
+	background-color: #F5F8FA;
+	position: relative;
+	min-height: 0 !important;
+
+	&:before {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		height: 8px;
+		background: linear-gradient(to bottom, rgba($black, 0.06), rgba($black, 0));
+	}
+
+	table thead {
+		background: transparent !important;
+	}
+}
+
+
+
+
+
+
+
+.card {
+	&.box {
+		border-radius: 0;
+		border: 3px solid #C9D5DD;
+
+		.card-content {
+			padding: 1em;
+		}
+	}
+}
+
+
+.border-left {
+	border-left: 0.5px solid rgba(#9EB3C2, 0.5);
+}
+.border-right {
+	border-right: 0.5px solid rgba(#9EB3C2, 0.5);
+}
+
+.border-left-large {
+	border-left: 3px solid rgba(#9EB3C2, 1);
+}
+.border-right-large {
+	border-right: 3px solid rgba(#9EB3C2, 1);
+}
 
 
 
@@ -241,9 +296,28 @@ header {
 
 
 
+.time-off-container {
+	padding: 0.5em 1em;
 
+	.row:not(:first-child):not(:last-child) {
+		border-bottom: 1px solid #E9EAED;
+		padding-bottom: 4px;
+		margin-bottom: 4px;
+	}
+	.row:first-child {
+		margin-bottom: 5px;
+	}
+}
 
+.time-off-table {
+	.truncate {
+		width: 100px;
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+	}
 
-
-
-
+	th {
+		line-height: 1.2;
+	}
+}

@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21">
+  <g id="ico_print" data-name="ico/print" transform="translate(1)">
+    <path id="Stroke_3" data-name="Stroke 3" d="M19,13.6V16H0V0H19V14" transform="translate(0 4)" fill="none" stroke="#6c6c6e" stroke-miterlimit="10" stroke-width="2"/>
+    <path id="Line_5" data-name="Line 5" d="M0,.5H11" transform="translate(4 8)" fill="none" stroke="#6c6c6e" stroke-linecap="square" stroke-miterlimit="10" stroke-width="2"/>
+    <path id="Line_5-2" data-name="Line 5" d="M0,.5H11" transform="translate(4 12)" fill="none" stroke="#6c6c6e" stroke-linecap="square" stroke-miterlimit="10" stroke-width="2"/>
+    <path id="Line_5-3" data-name="Line 5" d="M0,.5H11" transform="translate(4 16)" fill="none" stroke="#6c6c6e" stroke-linecap="square" stroke-miterlimit="10" stroke-width="2"/>
+    <path id="Stroke_3-2" data-name="Stroke 3" d="M11,3.4V4H0V0H11V3.5" transform="translate(4 1)" fill="#fff" stroke="#6c6c6e" stroke-miterlimit="10" stroke-width="2"/>
+  </g>
+</svg>

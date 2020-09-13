@@ -1,0 +1,235 @@
+extends _base
+
+block vars
+	- pagename = "Time Off"
+
+block content
+	header
+		.row.collapse.align-middle
+			.column
+				h1 Time Off
+				nav(aria-label="You are here:" role="navigation")
+					ul.breadcrumbs
+						li: a(href="./dashboard.html") Home
+						//- li: a(href="./job-description.html") Employees
+						li
+							span.show-for-sr Current:
+							| Time Off
+
+			.column.shrink
+				a.button.secondary.clear(href="./settings.html")
+					img(src="./images/icon-form.svg")
+					| Settings
+				| |
+				a.button.secondary.clear(href="#" onClick="window.history.back()")
+					img(src="./images/icon-back.svg")
+					| Back
+
+	section.page-content
+		br
+		.card.box
+			.row.collapse.expanded(style="width:100%;")
+				.column.small-3(style="border-right: 3px solid #C9D5DD")
+					.padding
+						h3 Takagi, Elena
+						//- .thumbnail-wrapper
+						img.thumbnail(src="./images/elena.png", alt="Elena Tagaki")
+						//- button.thumbnail-edit Edit
+						h4 NEW YORK SALES OFFICE
+						h6 Sales Associate<br><span style="font-style: italic; font-weight: 400;">Sales and Marketing</span>
+						br
+						h5 Manager
+						p.lead: a(href="#") UEDA, MUNERO
+						h5 Date of Hire
+						p.lead 10/11/2016
+
+						.row.collapse(style="margin-left: -0.5em")
+							.column.shrink
+								input.fancy-checkbox(type="checkbox" id="checkbox1")
+								label(for="checkbox1")
+							.column
+								label May delegate time-off approval to others
+						br
+						.row.collapse(style="margin-left: -0.5em")
+							.column.shrink
+								input.fancy-checkbox(type="checkbox" id="checkbox2")
+								label(for="checkbox2")
+							.column
+								label Add to pool of alternate signers
+				.column.small-5(style="border-right: 3px solid #C9D5DD")
+					.padding
+						h3.mb-0: span Time-Off Balances
+					hr.large(style="margin: 0;")
+					//- .padding
+					.time-off-container
+						.row
+							.column.small-5: small Type
+							.column.text-center: small Current
+							.column.text-center: small Pending
+							.column.text-center: small Available
+						.row
+							.column.small-5 Vacation&nbsp;(day)
+							.column.text-center 5.5
+							.column.text-center -5
+							.column.text-center 0.5
+						.row
+							.column.small-5 Sick&nbsp;Leave&nbsp;(hr)
+							.column.text-center 40
+							.column.text-center -6
+							.column.text-center 34
+						.row
+							.column.small-5 Personal&nbsp;Day&nbsp;(day)
+							.column.text-center 0
+							.column.text-center 0
+							.column.text-center 0
+						.row
+							.column.small-5 Bereavement&nbsp;(day)
+							.column.text-center 0
+							.column.text-center 0
+							.column.text-center 0
+						.row
+							.column.small-5 Voting&nbsp;Day&nbsp;Off&nbsp;(hr)
+							.column.text-center 0
+							.column.text-center 0
+							.column.text-center 0
+
+					//- table
+						thead
+							tr
+								th Type
+								th.text-center.no-padding Current
+								th.text-center.no-padding Pending
+								th.text-center.no-padding Available
+						tbody
+							tr
+								td Vacation&nbsp;(day)
+								td.text-center.no-padding 5.5
+								td.text-center.no-padding -5
+								td.text-center.no-padding 0.5
+							tr
+								td Sick&nbsp;Leave&nbsp;(hr)
+								td.text-center.no-padding 40
+								td.text-center.no-padding -6
+								td.text-center.no-padding 34
+							tr
+								td Personal&nbsp;Day&nbsp;(day)
+								td.text-center.no-padding 0
+								td.text-center.no-padding 0
+								td.text-center.no-padding 0
+							tr
+								td Bereavement&nbsp;Day&nbsp;(day)
+								td.text-center.no-padding 0
+								td.text-center.no-padding 0
+								td.text-center.no-padding 0
+							tr
+								td Voting&nbsp;Day&nbsp;Off&nbsp;(hr)
+								td.text-center.no-padding 0
+								td.text-center.no-padding 0
+									td.text-center 0
+
+				.column
+					.padding
+						h3.mb-0: span Current Overtime
+					hr.large(style="margin: 0;")
+					.time-off-container
+						.row
+							.column: small Policy Name
+							.column.text-right: small Effective Since
+						.row
+							.column Time Off Policy Default (Current)
+							.column.text-right 06/20/2019
+						.row
+							.column Policy for Directors
+							.column.text-right 05/01/2019
+						.row
+							.column Time Off Policy Default (Current)
+							.column.text-right 05/01/2019
+
+
+					.padding
+						button.button.hollow.secondary.expanded Change Current Policy
+						button.button.hollow.secondary.expanded Process Accrual Manually
+
+
+		form.form-panel(action="")
+			fieldset.fieldset(style="margin: 0; border-radius: 0; border-left: 0; border-right: 0; border-bottom: 0;")
+				legend Custom Dates
+
+				select.small-4
+					option(selected value="Vacation") Vacation
+
+				.row.align-middle
+					.column.shrink: p.lead.mb-0 Dates
+					.column.shrink: input.mb-0(type="date" style="width: 160px;")
+					.column.shrink: p.lead.mb-0 to
+					.column.shrink: input.mb-0(type="date" style="width: 160px;")
+					.column.shrink: button.button.hollow.secondary.white.mb-0 Filter
+					.column.text-right: button.button.hollow.secondary.mb-0 Post Adjustment
+
+
+		.card.box
+			.card-content
+				.row
+					.column.shrink
+						h4 Transaction Logo
+					.column.text-right
+						small Legend: [ A ] = Vacation, [ B ] = Sick Leave, [ C ] = Personal Day, [ D ] = Bereavement, [ E ] = Voting Day Off<br>Status: P = Pending, A = Approved, C = Completed, D = Denied
+			table.unstriped.time-off-table
+				thead
+					tr
+						th Date
+						th Time-Off&nbsp;Type
+						th Reason
+						th.text-center Status
+						th.text-center [ A ]<br>day
+						th.text-center [ B ]<br>hour
+						th.text-center [ C ]<br>day
+						th.text-center [ D ]<br>day
+						th.text-center [ E ]<br>hour
+						th.text-center Memo<br>Staff
+						th.text-center Memo<br>Mngr
+				tbody
+					for i in new Array(5)
+						tr.striped
+							td 03/19/2018
+							td Vacation
+							td.truncate Vacation
+							td.text-center P
+							td.text-center -1
+							td.text-center
+							td.text-center
+							td.text-center
+							td.text-center
+							td.border-left.text-center: img(src="./images/icon-question-circle.svg")
+							td.border-left.text-center
+					tr.striped.border-bottom-large
+						td(colspan="4"): strong Total Pending Time-Off Transactions During This Period:
+						td.text-center: strong -5
+						td.text-center: strong -6
+						td.text-center: strong 0
+						td.text-center: strong 0
+						td.text-center: strong 0
+						td
+						td
+					for i in new Array(20)
+						tr
+							td 03/19/2018
+							td Vacation
+							td: a(href="#"): .truncate My son's college graduation ceremony
+							td.text-center P
+							td.text-center -1
+							td.text-center
+							td.text-center
+							td.text-center
+							td.text-center
+							td.border-left.text-center: img(src="./images/icon-question-circle.svg")
+							td.border-left.text-center: img(src="./images/icon-question-circle.svg")
+					tr
+						td(colspan="4"): strong Total Pending Time-Off Transactions During This Period:
+						td.text-center: strong 5.5
+						td.text-center: strong 40
+						td.text-center: strong 0
+						td.text-center: strong 0
+						td.text-center: strong 0
+						td
+						td

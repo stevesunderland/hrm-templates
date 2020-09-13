@@ -1,0 +1,74 @@
+extends _base
+
+block vars
+	- pagename = "Job Description"
+
+block content
+	header
+		.row.collapse.align-middle
+			.column
+				h1 Job Description
+				nav(aria-label="You are here:" role="navigation")
+					ul.breadcrumbs
+						li: a(href="./dashboard.html") Home
+						//- li: a(href="./job-description.html") Job Description
+						li
+							span.show-for-sr Current:
+							| Job Description
+
+			.column.shrink
+				a.button.secondary.clear(href="./job-description--create-new.html")
+					img(src="./images/icon-form.svg")
+					| Create New JD
+				| |
+				a.button.secondary.clear(href="#" onClick="window.history.back()")
+					img(src="./images/icon-back.svg")
+					| Back
+	section.filters
+		form
+			fieldset.fieldset
+				legend Filters
+				.row.align-middle
+					.column.small-7
+						.input-group
+							input.input-group-field(type="text" placeholder="Search Employee by Name, Department, Phone, or E-mail" value="Elena" autofocus)
+							.input-group-button
+								button.button.hollow.secondary(type="submit")
+									img(src="./images/icon-search.svg", alt="Search")
+	section.page-content.search-results
+		h3 3 Employees Found
+		table
+			thead
+				tr
+					th Photo
+					th Name
+					th Location
+					th Job Title
+					th Department
+					th Hire Date
+			tbody
+				tr
+					td(style="padding: 3px;" width="34")
+						img(src=faker.image.avatar(), width="34")
+					td: a(href="./job-description--selected-employee.html") Elena Hussein
+					td Houston Plant
+					td Quality Control
+					td Manufacturing
+					td 01/01/2013
+				tr
+					td(style="padding: 3px;" width="34")
+						img(src=faker.image.avatar(), width="34")
+					td: a(href="./job-description--selected-employee.html") Elena Sidorov
+					td Los Angeles HQ
+					td President
+					td Global
+					td 11/21/2016
+				tr
+					td(style="padding: 3px;" width="34")
+						img(src=faker.image.avatar(), width="34")
+					td: a(href="./job-description--selected-employee.html") Elena Tagaki
+					td Los Angeles HQ
+					td Sales Associate
+					td Sales &amp; Marketing
+					td 11/04/2011
+	section.page-content

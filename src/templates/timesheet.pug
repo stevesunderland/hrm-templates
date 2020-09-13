@@ -1,0 +1,275 @@
+extends _base
+
+block vars
+	- pagename = "Timesheet"
+
+block content
+	header
+		.row.collapse.align-middle
+			.column
+				h1 Timesheet
+				nav(aria-label="You are here:" role="navigation")
+					ul.breadcrumbs
+						li: a(href="./dashboard.html") Home
+						//- li: a(href="./job-description.html") Employees
+						li
+							span.show-for-sr Current:
+							| Timesheet
+
+			.column.shrink
+				a.button.secondary.clear(href="./settings.html")
+					img(src="./images/icon-form.svg")
+					| Settings
+				| |
+				a.button.secondary.clear(href="#" onClick="window.history.back()")
+					img(src="./images/icon-back.svg")
+					| Back
+
+	section.page-content
+		br
+		.card.box
+			.row.collapse
+				.column.small-3(style="border-right: 3px solid #C9D5DD")
+					.padding
+						h3 Takagi, Elena
+						//- .thumbnail-wrapper
+						img.thumbnail(src="./images/elena.png", alt="Elena Tagaki")
+						//- button.thumbnail-edit Edit
+						h4 NEW YORK SALES OFFICE
+						h6 Sales Associate<br><span style="font-style: italic; font-weight: 400;">Sales and Marketing</span>
+						br
+						h5 Manager
+						p.lead: a(href="#") UEDA, MUNERO
+						h5 Date of Hire
+						p.lead 10/11/2016
+
+
+				.column.small-5(style="border-right: 3px solid #C9D5DD")
+					.padding
+						h3: span Current Working Hours
+						.row
+							.column
+								select.mb-0
+									option(selected value="") Default Working Hours
+							.column.shrink: button.button.hollow.secondary.mb-0 Change
+					hr.large(style="margin: 0;")
+					//- .padding
+					.time-off-container
+						.row
+						.row
+							.column.small-7 Monday
+							.column 9:00 - 17:00
+						.row
+							.column.small-7 Tuesday
+							.column 9:00 - 17:00
+						.row
+							.column.small-7 Wednesday
+							.column 9:00 - 17:00
+						.row
+							.column.small-7 Thursday
+							.column 9:00 - 17:00
+						.row
+							.column.small-7 Friday
+							.column 9:00 - 17:00
+						.row
+							.column.small-7 Saturday
+							.column Off
+						.row
+							.column.small-7 Sunday
+							.column Off
+					br
+					.row.collapse(style="margin-left: 0.5em;")
+						.column.shrink
+							input.fancy-checkbox(type="checkbox" id="checkbox_mealtime")
+							label(for="checkbox_mealtime")
+						.column: label(for="checkbox_mealtime") Count meal time as worktime, up to
+					.row
+						.column.text-center
+							br
+							select(style="width: 180px;")
+								option(selected) 30 Minutes
+
+
+				.column
+					.padding
+						h3: span Current Overtime Rule
+						.row
+							.column
+								select.mb-0
+									option(selected value="") Default Rule
+							.column.shrink: button.button.hollow.secondary.mb-0 Change
+					hr.large(style="margin: 0;")
+					.padding
+						ul
+							li Add overtime 1.5X regular hourly   pay if working over 40 hours   during the regular work week.
+							li Add overtime 1.5x regular hourly   pay if working on a non-work   day.
+							li Add overtime 2.0x regular hourly   pay if working over 44 hours   during the regular work week.
+
+
+		form.form-panel(action="" style="padding-bottom: 1em;")
+			fieldset.fieldset(style="margin: 0; border-radius: 0; border-left: 0; border-right: 0; border-bottom: 0; padding-bottom: 0;")
+				legend Custom Dates
+
+				.row
+					.column.small-4
+						select
+							option(selected value="Vacation") Look Up
+					.column.shrink
+						button.button.hollow.secondary.white Search
+
+				.row.align-middle
+					.column.shrink: p.lead.mb-0 Dates
+					.column.shrink: input.mb-0(type="date" style="width: 160px;")
+					.column.shrink: p.lead.mb-0 to
+					.column.shrink: input.mb-0(type="date" style="width: 160px;")
+					.column.shrink: button.button.hollow.secondary.white.mb-0 Search
+					.column.text-right: button.button.hollow.secondary.mb-0 Post Adjustment
+				br
+				input(type="radio" id="show_actual")
+				label(for="show_actual") Show Actual
+
+				input(type="radio" id="show_rounded" checked)
+				label(for="show_rounded") Rounded
+
+		.card.box
+			.card-content
+				h4 Timesheet
+
+			table.unstriped.timesheet-table
+				thead
+					tr
+						th Date
+						th Day
+						th.text-center Clock In
+						th.text-center Meal Start
+						th.text-center Meal End
+						th.text-center Clock Out
+						th.text-center Total Hrs.
+						th.text-center Total Hrs.
+						th.text-center Reg Hrs.
+						th.text-center OT x1.5
+						th.text-center OT 2.0
+						th.text-center Edit
+						th.text-center HR Memo
+						th.text-center(colspan="2") Mgr. Appr
+				tbody
+					tr.striped(valign="top")
+						td 10/19/2018
+						td Fri
+						td.text-center 09:00
+						td.text-center
+						td.text-center
+						td.text-center 18:30
+						td.text-center: strong 09:00
+						td.text-center 9:00
+						td.text-center
+						td.text-center
+						td.text-center.border-right
+						td(width="40").text-center.border-bottom-large(rowspan="2"): img(src="./images/icon-edit.svg")
+						td(width="40").text-center.border-bottom-large(rowspan="2"): img(src="./images/icon-memo.svg")
+						td(width="40").text-center.border-bottom-large(rowspan="2"): img(src="./images/icon-edit.svg")
+						td(width="40").text-center.border-bottom-large(rowspan="2"): img(src="./images/icon-edit.svg")
+					tr.striped.border-bottom-large
+						td(colspan="6")
+						td.text-center: strong <small>Week&nbsp;Total</small><br>09:30
+						td.text-center 9:00
+						td.text-center 0:00
+						td.text-center 0:00
+						td
+					each i, index in new Array(5)
+						tr.striped-dark(valign="top")
+							td 10/19/2018
+							td Mon
+							td.text-center 09:00
+							td.text-center 12:00
+							td.text-center 12:30
+							td.text-center: strong.text-alert 18:30
+							td.text-center: strong 09:00
+							td.text-center 9:00
+							td.text-center
+							td.text-center
+							td.text-center.border-right
+							if index == 0
+								td.text-center.border-bottom-large(rowspan="6"): img(src="./images/icon-edit.svg")
+								td.text-center.border-bottom-large(rowspan="6"): img(src="./images/icon-memo.svg")
+								td.text-center.border-bottom-large(rowspan="6"): img(src="./images/icon-edit.svg")
+								td.text-center.border-bottom-large(rowspan="6"): img(src="./images/icon-edit.svg")
+					tr.striped-dark.border-bottom-large
+						td(colspan="6")
+						td.text-center: strong <small>Week&nbsp;Total</small><br>47:30
+						td.text-center 9:00
+						td.text-center 0:00
+						td.text-center 0:00
+						td
+
+					each i, index in new Array(2)
+						tr(valign="top")
+							td 10/19/2018
+							td Mon
+							td.text-center 09:00
+							td.text-center 12:00
+							td.text-center 12:30
+							td.text-center 18:30
+							td.text-center: strong 09:00
+							td.text-center 9:00
+							td.text-center
+							td.text-center
+							td.text-center.border-right
+							if index == 0
+								td.text-center.border-bottom-large(rowspan="4"): img(src="./images/icon-edit.svg")
+								td.text-center.border-bottom-large(rowspan="4"): img(src="./images/icon-memo.svg")
+								td.text-center.border-bottom-large(rowspan="4"): img(src="./images/icon-edit.svg")
+								td.text-center.border-bottom-large(rowspan="4"): img(src="./images/icon-edit.svg")
+					each i, index in new Array(2)
+						tr(valign="top" class=(index == 1 ? 'border-bottom-large' : ''))
+							td 10/19/2018
+							td Mon
+							td.text-center 09:00
+							td.text-center 12:00
+							td.text-center 12:30
+							td.text-center 18:30
+							td.text-center: strong <small>Week Total</small><br>16:10
+							td.text-center 9:00
+							td.text-center
+							td.text-center
+							td.text-center.border-right
+
+					tr.highlight
+						td(colspan="6")
+						td.text-center: strong <small>Period&nbsp;Total</small><br>65:45
+						td.text-center: strong 9:00
+						td.text-center: strong 0:00
+						td.text-center: strong
+						td.text-center.border-right: strong 0:00
+						td(colspan="4")
+					//- tr.striped.border-bottom-large
+						td(colspan="4"): strong Total Pending Time-Off Transactions During This Period:
+						td.text-center: strong -5
+						td.text-center: strong -6
+						td.text-center: strong 0
+						td.text-center: strong 0
+						td.text-center: strong 0
+						td
+						td
+					//- for i in new Array(20)
+						tr
+							td 03/19/2018
+							td Vacation
+							td: a(href="#"): .truncate My son's college somethingorther
+							td.text-center P
+							td.text-center -1
+							td.text-center
+							td.text-center
+							td.text-center
+							td.text-center
+							td.border-left.text-center: img(src="./images/icon-question-circle.svg")
+							td.border-left.text-center: img(src="./images/icon-question-circle.svg")
+					//- tr
+						td(colspan="4"): strong Total Pending Time-Off Transactions During This Period:
+						td.text-center: strong 5.5
+						td.text-center: strong 40
+						td.text-center: strong 0
+						td.text-center: strong 0
+						td.text-center: strong 0
+						td
+						td

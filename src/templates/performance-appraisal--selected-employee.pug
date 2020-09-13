@@ -1,0 +1,81 @@
+extends _base
+
+block vars
+	- pagename = "Performance Appraisal"
+
+block content
+	header
+		.row.collapse.align-middle
+			.column
+				h1 Performance Appraisal
+				nav(aria-label="You are here:" role="navigation")
+					ul.breadcrumbs
+						li: a(href="./dashboard.html") Home
+						li: a(href="./performance-appraisal.html") Performance Appraisal
+						li
+							span.show-for-sr Current:
+							| Selected Employee
+
+			.column.shrink
+				a.button.secondary.clear(href="./performance-appraisal--status-report.html")
+					img(src="./images/icon-report.svg")
+					| PA Status Report
+				| |
+				a.button.secondary.clear(href="./performance-appraisal--create-new.html")
+					img(src="./images/icon-form.svg")
+					| Create New PA
+				| |
+				a.button.secondary.clear(href="#" onClick="window.history.back()")
+					img(src="./images/icon-back.svg")
+					| Back
+
+	section.filters
+		form(action="./performance-appraisal--filtered.html")
+			fieldset.fieldset
+				legend Filters
+				.row.align-middle
+					.column.small-7
+						.input-group
+							input.input-group-field(type="text" placeholder="Search Employee by Name, Department, Phone, or E-mail")
+							.input-group-button
+								button.button.hollow.secondary(type="submit")
+									img(src="./images/icon-search.svg", alt="Search")
+	section.page-content.search-results
+		h3 <span>Found 3 JD(s) for </span>Takagi, Elena<br><span>(Sales and Marketing)</span>
+		table
+			thead
+				tr
+					th Status
+					th Department
+					th Position Title
+					th Location
+					th Reports To
+					th FSA Status
+					th Date Last Modified
+			tbody
+				tr
+					td: a(href="./performance-appraisal--selected-employee--details.html") JD Form / Prepare for Release
+					td *GLOBAL
+					td MASTER TEMPLATE
+					td NYC
+					td Ueda, Munero (Sales and Marketing)
+					td Non-Exempt
+					td 09/26/2015
+				tr
+					td: a(href="./performance-appraisal--selected-employee--details.html") JD Completed
+					td *GLOBAL
+					td MASTER TEMPLATE
+					td NYC
+					td Ueda, Munero (Sales and Marketing)
+					td Non-Exempt
+					td 09/26/2015
+				tr
+					td: a(href="./performance-appraisal--selected-employee--details.html") JD Form / Manager Review
+					td *GLOBAL
+					td MASTER TEMPLATE
+					td NYC
+					td Ueda, Munero (Sales and Marketing)
+					td Non-Exempt
+					td 09/26/2015
+
+	section.page-content

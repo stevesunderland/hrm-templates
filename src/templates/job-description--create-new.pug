@@ -1,0 +1,47 @@
+extends _base
+
+block vars
+	- pagename = "Job Description"
+
+block content
+	header
+		.row.collapse.align-middle
+			.column
+				h1 Create New JD
+				nav(aria-label="You are here:" role="navigation")
+					ul.breadcrumbs
+						li: a(href="./dashboard.html") Home
+						li: a(href="./job-description.html") Job Description
+						li
+							span.show-for-sr Current:
+							| Create New JD
+
+			.column.shrink
+				a.button.secondary.clear(href="#" onClick="window.history.back()")
+					img(src="./images/icon-back.svg")
+					| Back
+
+
+	section.page-content
+		form.form-panel(action="")
+			.row
+				.column
+					label Employee Name
+						select
+							option(disabled selected value="") Select
+					label Review Period
+						select
+							option(disabled selected value="") Select
+					label Template
+						select
+							option(disabled selected value="") Select
+				.column
+					label Appraiser Name (You)
+						input(type="text" readonly value="Yamauchi, Ryuji (Human Resources)")
+					label Appraiser Title
+						input(type="text" readonly value="HR Manager")
+
+			.row.text-center(style="margin-top: 2em;")
+				.column
+					button.button.large.gradient.shadow.white Cancel
+					button.button.large.gradient.shadow.primary(type="submit") Review Form

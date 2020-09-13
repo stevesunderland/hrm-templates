@@ -14,11 +14,11 @@
 			"icon": "/images/icon-job-description.svg" },
 		{
 			"title": "Performance Appraisal",
-			"link": "#",
+			"link": "./performance-appraisal.html",
 			"icon": "/images/icon-performance.svg" },
 		{
 			"title": "HR Policies & Forms",
-			"link": "#",
+			"link": "./hr-policies-forms.html",
 			"icon": "/images/icon-policies.svg" },
 		{
 			"title": "Attendance",
@@ -30,7 +30,7 @@
 			"icon": "/images/icon-reports.svg" },
 		{
 			"title": "Time Off",
-			"link": "#",
+			"link": "./time-off.html",
 			"icon": "/images/icon-time-off.svg" },
 		{
 			"title": "Settings",

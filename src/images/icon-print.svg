@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="25px" height="22px" viewBox="0 0 25 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>ico/print</title>
+    <defs>
+        <linearGradient x1="50%" y1="0.305814205%" x2="50%" y2="99.9236927%" id="linearGradient-1">
+            <stop stop-color="#9EB3C2" stop-opacity="0" offset="0%"></stop>
+            <stop stop-color="#9EB3C2" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Desktop-HD" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="3.1-JD-Details" transform="translate(-831.000000, -42.000000)">
+            <rect fill="#D6ECF7" x="0" y="0" width="1024" height="2610"></rect>
+            <g id="title-bar-B" transform="translate(190.000000, 20.000000)">
+                <g id="bar-TITLE">
+                    <rect id="box-WHITE" fill="#FFFFFF" x="0" y="0" width="821" height="67"></rect>
+                    <rect id="grad-SHADOW" fill="url(#linearGradient-1)" style="mix-blend-mode: multiply;" opacity="0.2" x="0" y="36" width="821.001215" height="31"></rect>
+                    <g id="Group" transform="translate(744.094775, 23.000000)" stroke="#009DDC" stroke-width="2">
+                        <g id="Stroke-1">
+                            <polyline transform="translate(4.993925, 8.500000) rotate(-180.000000) translate(-4.993925, -8.500000) " points="2.49696233 13 7.490887 8.5 2.49696233 4"></polyline>
+                            <path d="M3.99513973,8.5 L14.981774,8.5 C17.3122722,8.92424242 18.4775213,10.1969697 18.4775213,12.3181818 C18.4775213,14.4393939 17.3122722,15.5 14.981774,15.5 L7.99027947,15.5" id="Path-2"></path>
+                        </g>
+                    </g>
+                </g>
+                <g id="bar-SUB-PATH" transform="translate(0.000000, 67.000000)" fill="#ECF0F3">
+                    <rect id="Rectangle" x="0" y="0" width="821" height="22"></rect>
+                </g>
+            </g>
+            <g id="Group" transform="translate(832.000000, 43.000000)" stroke="#009DDC" stroke-width="2">
+                <g>
+                    <path d="M4.04610714,12 L18.99327,12 L18.99327,19.6967295 L4.4059872,19.9811856 L4.04610714,12 Z" id="Stroke-5"></path>
+                    <polyline id="Stroke-3" transform="translate(11.500000, 2.500000) rotate(-270.000000) translate(-11.500000, -2.500000) " points="14 10 9 10 9 -5 14 -5"></polyline>
+                    <polyline id="Stroke-3" transform="translate(11.500000, 12.000000) rotate(-270.000000) translate(-11.500000, -12.000000) " points="16 19.7 16 23 7 23 7 1 16 1 16 4.3"></polyline>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

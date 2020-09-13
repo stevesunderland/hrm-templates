@@ -1,0 +1,125 @@
+extends _base
+
+block vars
+	- pagename = "Settings"
+
+block content
+	header
+		.row.collapse.align-middle
+			.column
+				h1 Company
+				nav(aria-label="You are here:" role="navigation")
+					ul.breadcrumbs
+						li: a(href="./dashboard.html") Home
+						li: a(href="./settings.html") Settings
+						li
+							span.show-for-sr Current:
+							| Company
+
+			.column.shrink
+				a.button.secondary.clear(href="#" onClick="window.history.back()")
+					img(src="./images/icon-back.svg")
+					| Back
+
+	section.page-content.settings-page
+		form.form-panel(action="")
+			.row.small-up-2.align-middle
+				.column
+					label Status
+					select.small-6(name="")
+						option(selected value="") Active
+				.column
+					//- br
+					.row.align-middle
+						.column: label Enable Self-Evaluation for PA
+						.column.small-3
+							select.mb-0(name="")
+								option(selected value="NO") NO
+								option(value="YES") YES
+				.column
+					label Company Name
+					input(type="text" value="HRM Demo 2")
+				.column
+					//- br
+					.row.align-middle
+						.column: label Enable Self-Evaluation Questionnaire for PA
+						.column.small-3
+							select.mb-0(name="")
+								option(selected value="NO") NO
+								option(value="YES") YES
+				.column
+					label Company Code (for log-in)
+					input(type="text" value="HRM Demo 2")
+				.column
+					.row.align-middle
+						.column: label Allow Each PA Template to control whether to Skip Approval Processing and/or Skip Self-Evaluation
+						.column.small-3
+							select.mb-0(name="")
+								option(selected value="YES") YES
+								option(value="NO") NO
+				.column
+					label Office Locations
+					button.button.hollow.secondary Edit Locations
+				.column
+					//- br
+					.row.align-middle
+						.column: label Session Timeout (in Minutes)<br><span class="text-muted">(values must be between 5-120)</span>
+						.column.small-3
+							input(type="number" min="5" max="120" value="30")
+				.column
+					label Hr Portal URL
+					input(type="text" value="https://portal.hrm-partners.com")
+				.column
+					.row.align-middle
+						.column: label Time Off Definition for 1 day
+						.column.small-5
+							select.mb-0(name="")
+								option(selected value="") 8 Hours
+				.column
+					.row.align-middle
+						.column: label Enable Pseudo User Function for HR Manager
+						.column.small-3
+							select.mb-0(name="")
+								option(selected value="YES") YES
+								option(value="NO") NO
+				.column
+					.row.align-middle
+						.column: label Time Off Mode
+						.column.small-6
+							select.mb-0(name="")
+								option(selected value="") Anniversary
+				.column
+					.row.align-middle
+						.column: label Enable E-Mail Deliveries for JA, PA, and Time Off
+						.column.small-3
+							select.mb-0(name="")
+								option(selected value="NO") NO
+								option(value="YES") YES
+				.column
+					label Company Logo
+					button.button.hollow.secondary Edit Logo
+				.column
+					.row.align-middle
+						.column: label Post Transaction Notices on Dashboard for JD, PA, and Time Off
+						.column.small-3
+							select.mb-0(name="")
+								option(selected value="YES") YES
+								option(value="NO") NO
+				.column
+					label Now Menus
+					button.button.hollow.secondary Select
+				.column
+					label Enable PA Copy Function
+					select(name="")
+						option(selected value="YES, with Copy and Skip")
+
+			.text-center(style="margin-top: 2em;")
+				button.button.large.white.gradient.shadow Cancel
+				input.button.large.primary.gradient.shadow(type="submit" value="Submit")
+
+
+
+
+
+
+

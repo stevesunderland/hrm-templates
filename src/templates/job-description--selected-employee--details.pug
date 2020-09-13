@@ -1,0 +1,145 @@
+extends _base
+
+block vars
+	- pagename = "Job Description"
+
+block content
+	header
+		.row.collapse.align-middle
+			.column
+				h1 Job Description
+				nav(aria-label="You are here:" role="navigation")
+					ul.breadcrumbs
+						li: a(href="./dashboard.html") Home
+						li: a(href="./job-description.html") Job Description
+						li: a(href="./job-description--selected-employee.html") Selected Employee
+						li
+							span.show-for-sr Current:
+							| JD Details
+
+			.column.shrink
+				a.button.secondary.clear(href="./job-description--create-new.html")
+					img(src="./images/icon-print.svg")
+					| Print
+				| |
+				a.button.secondary.clear(href="#" onClick="window.history.back()")
+					img(src="./images/icon-back.svg")
+					| Back
+
+	section.page-content(style="padding-top: 1em;")
+		.card.box
+			table.unstriped(style="margin-bottom: 0;")
+				thead
+					tr
+						td(colspan="4")
+							h4(style="margin: 0.5em 0;") Current Appraisal Status: <strong class="text-primary">JD Completed</strong>
+
+				tbody
+					tr
+						td.border-right: strong Position Title
+						td.striped.border-right-large MASTER TEMPLATE
+						td.border-right: strong FLSA Status
+						td.striped Non-Exempt
+					tr
+						td.border-right: strong Department
+						td.striped.border-right-large SALES AND MARKETING
+						td.border-right: strong Date Last Modified
+						td.striped 09/26/2015
+					tr
+						td.border-right: strong Location
+						td.border-right-large NYC
+						td.border-right: strong Current Incumbent
+						td TAKAGI, Elena<br>(SALES AND MARKETING)
+					tr
+						td.border-right: strong Reports To
+						td.striped.border-right-large UEDA, Munero<br>(SALES AND MARKETING)
+						td.border-right: strong Reports to Title
+						td.striped Sales Manager
+		.card.box
+			.card-content
+				h4 General Position Summary
+				textarea(name="", cols="30", rows="5") Testing
+
+		.card.box
+			.card-content
+				h4 Essential Job Functions
+				hr.large
+				ul
+					li ESSENTIAL
+					li FUNCTIONS
+
+		.card.box
+			.card-content
+				h4 Ciritical Competencies (Knowledge, Skills &amp; Abilities)
+				h6 Competencies (Specialists)
+				hr.large
+				p <u>Professional Skills:</u><br> Protects company confidential information such as product, pricing and customer information from exposure to theft, privacy or unauthorized use. Seeks constant improvement, more efficient and less expensive ways and means in work processes. Performs special projects and other miscellaneous duties as assigned by supervisor. Maintains high ethical standards in the work place. Reports all irregular issues and problems to supervisor for solution. Maintains good communication with other employees and other individuals in the workplace. Understands and follows company policies and procedures. Clearly understands the supervisor’s direction, reconfirms and asks questions if any uncertainty exists.
+
+				p <u>Communication Skills III: </u><br>Communicates department/division/branch goals and objectives in a clear and concise manner. Facilitates constructive communication across the team. Is easy to talk to, and spends the extra effort to put others at ease. Stays calm when faced with difficult people, and comes up with clever and strategic solutions.
+
+				p <u>Teamwork / Team Management III:</u><br>Makes efforts to create morale and team spirit among team members. Places team priorities before personal priorities. Resolves conflicts within the team smoothly and effectively. Assigns tasks to team members to pursue the optimum use of team members’ time and capability.
+
+				p <u>Customer Orientation III:</u><br>Fully makes oneself available for customers, and presents himself/herself as a reliable partner and problem solver in the eyes of customers.
+
+				p <u>Initiative III:</u><br>Does more than required to enhance work results and create new opportunities. Always asks for challenges and takes on extra tasks to add value to the Company. Seeks ways to reduce costs and expand business opportunities. Consistently seizes opportunities when they arise and produces quality work and services. Consistently thinks about ways to improve work processes and services.
+
+				p <u>Planning & Organizing II:</u><br>Anticipates obstacles, thinks ahead to next steps and develops contingency plans. Good at figuring out systematic ways to get the job done and to improve processes and systems. Enhances productivity of own and team’s work by devising new methods.
+
+				p <u>Analytical & Conceptual Thinking I:</u><br>Breaks down a problem into smaller parts, and analyzes relationships among those parts. Uses knowledge and theory of different past trends or situations to look at current appropriately.
+
+				p <u>Problem Solving & Decision Making I:</u><br>Takes fast action when problems arise. Makes well informed decisions or solves problems by applying knowledge and technical expertise, and with through analysis of the situation and potential risks. Ensures that decisions are in line with company's overall policies and strategic direction. Involves others in decisions, when required, to increase accuracy, completeness of information and quality of decisions.
+
+		.card.box
+			.row.collapse
+				.column.border-right-large
+					.card-content
+						h4 Minimum Qualifications
+						hr.large
+						ul
+							li Education
+				.column
+					.card-content
+						h4 Work Environment & Physical Demands
+						hr.large
+						p <u>Work:</u><br>Work
+						p <u>Environment:</u><br>Environment
+						p <u>Physical:</u><br>Physical
+						p <u>Demands:</u><br>Demands
+		.card.box
+			.card-content
+				h4 General Position Summary
+				textarea(name="", cols="30", rows="5") Testing
+
+
+		.print-only(style="margin: 6em 0")
+			.row(style="margin-bottom: 4em;")
+				.column
+					hr.signature
+					p Employee Signature
+				.column.small-4
+					hr.signature
+					p Date
+			.row
+				.column
+					hr.signature
+					p Manager Signature
+				.column.small-4
+					hr.signature
+					p Date
+
+
+		.card.box
+			.card-content
+				h4 JD History
+			table.unstriped
+				thead
+					tr
+						th Status
+						th Signer
+						th Date Signed
+				tbody
+					for i in new Array(10)
+						tr
+							td.border-right JD Form Approcal - Manager's Manager
+							td.border-right Munero Ueda
+							td 2015-09-26

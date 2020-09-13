@@ -1,32 +1,36 @@
 extends _base
 
 block vars
-	- pagename = "Job Description"
+	- pagename = "Performance Appraisal"
 
 block content
 	header
 		.row.collapse.align-middle
 			.column
-				h1 Job Description
+				h1 Performance Appraisal
 				nav(aria-label="You are here:" role="navigation")
 					ul.breadcrumbs
 						li: a(href="./dashboard.html") Home
 						//- li: a(href="./job-description.html") Employees
 						li
 							span.show-for-sr Current:
-							| Job Description
+							| Performance Appraisal
 
 			.column.shrink
-				a.button.secondary.clear(href="./job-description--create-new.html")
+				a.button.secondary.clear(href="./performance-appraisal--status-report.html")
+					img(src="./images/icon-report.svg")
+					| PA Status Report
+				| |
+				a.button.secondary.clear(href="./performance-appraisal--create-new.html")
 					img(src="./images/icon-form.svg")
-					| Create New ID
+					| Create New PA
 				| |
 				a.button.secondary.clear(href="#" onClick="window.history.back()")
 					img(src="./images/icon-back.svg")
 					| Back
 
 	section.filters
-		form(action="./job-description--filtered.html")
+		form(action="./performance-appraisal--filtered.html")
 			fieldset.fieldset
 				legend Filters
 				.row.align-middle
@@ -51,7 +55,7 @@ block content
 				for i in new Array(21)
 					tr
 						td(style="padding: 3px;"): img(src=faker.image.avatar(), width="34")
-						td: a(href="./job-description--selected-employee.html")= faker.name.findName()
+						td: a(href="./performance-appraisal--selected-employee.html")= faker.name.findName()
 						td= faker.address.city() + ' ' + offices[Math.floor(Math.random() * offices.length)]
 						td= faker.name.jobTitle()
 						td= faker.name.jobArea()

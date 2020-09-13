@@ -1,0 +1,103 @@
+extends _base
+
+block vars
+	- pagename = "HR Policies & Forms"
+
+block content
+	header
+		.row.collapse.align-middle
+			.column
+				h1 HR Policies &amp; Forms
+				nav(aria-label="You are here:" role="navigation")
+					ul.breadcrumbs
+						li: a(href="./dashboard.html") Home
+						//- li: a(href="./job-description.html") Employees
+						li
+							span.show-for-sr Current:
+							| HR Policies &amp; Forms
+
+			.column.shrink
+				a.button.secondary.clear(href="./job-description--create-new.html")
+					.row.align-middle.collapse
+						.column.shrink
+							img(src="./images/icon-duplicate.svg")
+						.column.text-left Copy from HRM<br>Master Templates
+				| |
+				a.button.secondary.clear(href="#" onClick="window.history.back()")
+					img(src="./images/icon-back.svg")
+					| Back
+
+	section.page-content
+		br
+		.card.box
+			.card-content
+				.row
+					.column
+						h4 Policies
+					.column.shrink
+						a.button.hollow.secondary.shadow.mb-0(href="#") Add New Policy
+			table.unstriped
+				thead
+					tr
+						th Policy Name
+						th(width="50"): img(src="./images/icon-question-circle.svg", alt="")
+						th Last&nbsp;Updated
+						th.text-center Access
+						th.text-center File&nbsp;Size
+						th Edit
+				tbody
+					tr.striped
+						td: a(href="#") Employee Warning Form_Blank.doc
+						td: img(src="./images/icon-question-circle.svg", alt="")
+						td 2014-11-02
+						td.text-center Manager Only
+						td.text-center 47kb
+						td <a href="./hr-policies-forms--edit-form.html">Edit</a> | <a href="#">Delete</a>
+					tr.striped
+						td: a(href="#") Sample Electronic Employee Handbook Acknowledgement.doc
+						td: img(src="./images/icon-question-circle.svg", alt="")
+						td 2018-03-13
+						td.text-center Manager Only
+						td.text-center 57kb
+						td <a href="./hr-policies-forms--edit-form.html">Edit</a>&nbsp;|&nbsp;<a href="#">Delete</a>
+
+		.card.box
+			.card-content
+				.row
+					.column
+						h4 Forms
+					.column.shrink
+						a.button.hollow.secondary.shadow.mb-0(href="#") Add New Form
+			table.unstriped
+				thead
+					tr
+						th Folders &nbsp; &nbsp; <a href="#">+ Add a Folder</a>
+						th: img(src="./images/icon-question-circle.svg", alt="")
+						th Last&nbsp;Updated
+						th.text-center Access
+						th Edit
+				tbody
+					tr.striped
+						td: a(href="./hr-policies-forms--view-forms.html") BUSINESS TRIP PERMISSION REQUEST
+						td: img(src="./images/icon-question-circle.svg", alt="")
+						td 2014-11-02
+						td.text-center All Employees
+						td <a href="./hr-policies-forms--edit-form.html">Edit</a> | <a href="#">Delete</a>
+					tr.striped
+						td: a(href="./hr-policies-forms--view-forms.html") DISABILITY TIME OFF REQUEST
+						td: img(src="./images/icon-question-circle.svg", alt="")
+						td 2018-03-13
+						td.text-center All Employees
+						td <a href="./hr-policies-forms--edit-form.html">Edit</a>&nbsp;|&nbsp;<a href="#">Delete</a>
+					tr.striped
+						td: a(href="./hr-policies-forms--view-forms.html") EXPENSE FORMS
+						td: img(src="./images/icon-question-circle.svg", alt="")
+						td 2014-11-02
+						td.text-center All Employees
+						td <a href="./hr-policies-forms--edit-form.html">Edit</a> | <a href="#">Delete</a>
+					tr.striped
+						td: a(href="./hr-policies-forms--view-forms.html") TRAVEL PERMISSION FORMS
+						td: img(src="./images/icon-question-circle.svg", alt="")
+						td 2018-03-13
+						td.text-center All Employees
+						td <a href="./hr-policies-forms--edit-form.html">Edit</a>&nbsp;|&nbsp;<a href="#">Delete</a>

@@ -3,6 +3,25 @@ h1 {
 	color: $black;
 }
 
+h3 {
+	font-size: 16px;
+	font-weight: 600;
+	color: $black;
+
+	span {
+		font-weight: 400;
+	}
+}
+
+h4 {
+	font-size: 18px;
+	color: $black;
+	margin-bottom: 0.25em;
+}
+
+h6 {
+	font-weight: 600;
+}
 
 
 
@@ -18,9 +37,17 @@ hr {
 		}
 	}
 
+	&.big, &.large {
+		border-bottom: 3px solid #9EB3C2;
+	}
+
 	&.dotted {
 		border-top: 1px dashed #D3E1E2;
 		border-bottom: 0;
+	}
+
+	&.signature {
+		border-bottom: 1px solid $black;
 	}
 }
 
@@ -30,6 +57,14 @@ hr {
 
 .text-alert {
 	color: $alert-color;
+}
+
+.text-underline {
+	text-decoration: underline;
+}
+
+.text-muted {
+	color: $dark-gray;
 }
 
 

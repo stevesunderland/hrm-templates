@@ -1,6 +1,11 @@
 /* TABLES */
 
 table {
+
+	tr, td {
+		color: $black;
+	}
+
 	tr:not(.extra-header) {
 		th {
 			border-bottom: 3px solid #9EB3C2;
@@ -13,9 +18,31 @@ table {
 		}
 	}
 
+	tr.totals {
+		background-color: #fff;
+	}
+	tr.highlight {
+		&, & td {
+			background-color: #D8F5FE;
+			color: $black;
+
+		}
+	}
+	tr.striped td, td.striped {
+		background-color: #F5F8FA;
+	}
+	tr.striped-dark td, td.striped-dark {
+		background-color: #E9F0F4;
+	}
+	tr {
+		&.border-bottom-large td {
+			border-bottom: 3px solid rgba(#9EB3C2, 1);
+		}
+	}
+
 	td {
 		border-bottom: 0.5px solid rgba(#9EB3C2, 0.5);
-		line-height: 1.1;
+		line-height: 1.5;
 
 		&.border-left {
 			border-left: 0.5px solid rgba(#9EB3C2, 0.5);
@@ -30,18 +57,46 @@ table {
 		&.border-right-large {
 			border-right: 3px solid rgba(#9EB3C2, 1);
 		}
-
-		&.no-padding {
-			padding-left: 0;
-			padding-right: 0;
-			text-align: center;
+		&.border-bottom-large {
+			border-bottom: 3px solid rgba(#9EB3C2, 1);
 		}
 
+
+		&.no-padding {
+			padding-left: 0 !important;
+			padding-right: 0 !important;
+			text-align: center;
+		}
 	}
 
 	td {
 		input[type="checkbox"] {
 			margin-bottom: 0;
 		}
+	}
+
+	&.bordered {
+		tr {
+			td:not(:last-child) {
+				border-right: 0.5px solid rgba(#9EB3C2, 0.5);
+			}
+		}
+	}
+}
+
+
+
+table.timesheet-table {
+	th, td {
+		padding-left: 8px !important;
+		padding-right: 8px !important;
+	}
+
+	th {
+		line-height: 1;
+	}
+
+	img {
+		width: 20px;
 	}
 }

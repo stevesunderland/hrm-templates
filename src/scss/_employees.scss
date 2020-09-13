@@ -10,6 +10,9 @@
 	input[type="checkbox"] {
 		@extend .fancy-checkbox;
 	}
+	&, thead, thead tr, thead tr th {
+		background-color: transparent !important;
+	}
 }
 
 .thumbnail-wrapper {

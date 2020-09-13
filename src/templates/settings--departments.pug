@@ -1,0 +1,52 @@
+extends _base
+
+block vars
+	- pagename = "Settings"
+
+block content
+	header
+		.row.collapse.align-middle
+			.column
+				h1 Departments
+				nav(aria-label="You are here:" role="navigation")
+					ul.breadcrumbs
+						li: a(href="./dashboard.html") Home
+						li: a(href="./settings.html") Settings
+						li
+							span.show-for-sr Current:
+							| Departments
+
+			.column.shrink
+				a.button.secondary.clear
+					img(src="./images/icon-posts.svg")
+					| New Department
+				| |
+				a.button.secondary.clear(href="#" onClick="window.history.back()")
+					img(src="./images/icon-back.svg")
+					| Back
+
+	section.page-content.settings-page
+		table
+			thead
+				tr
+					th ID
+					th Department Name
+					th.text-center Status
+			tbody
+				tr
+					td: a(href="#") 101067
+					td *GLOBALLY
+					td.text-center Y
+				tr
+					td: a(href="#") 101338
+					td HUMAN RESOURCES
+					td.text-center Y
+				tr
+					td: a(href="#") 101354
+					td MANUFACTURING
+					td.text-center Y
+				tr
+					td: a(href="#") 101108
+					td SALES AND MARKETING
+					td.text-center Y
+
