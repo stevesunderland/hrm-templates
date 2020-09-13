@@ -1,6 +1,6 @@
 
 body {
-	padding: 10px;
+	padding: 0;
 }
 
 main {
@@ -22,15 +22,24 @@ section.content {
 	background-color: $white;
 	padding-left: 0;
 	padding-right: 0;
+
+	position: absolute;
+	top: 10px;
+	left: 240px;
+	right: 0;
 }
 
 section.page-content, section.filters {
 	padding-left: $global-padding ;
 	padding-right: $global-padding ;
+
+	min-width: 720px;
+	max-width: 1080px;
+	margin: 0 auto;
 }
 
 section.page-content {
-	min-height: 660px;
+	min-height: 100vh;
 
 
 }
@@ -58,6 +67,11 @@ header {
 	display: block;
 	height: 10px;
 	width: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 999;
 }
 
 
